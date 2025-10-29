@@ -1,55 +1,241 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Prime Style - Detalle</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div id="movie-container"></div>
-
-  <script src="script.js"></script>
-  <script>
-    const params = new URLSearchParams(window.location.search);
-    const movieId = params.get('id');
-    const movie = movies.find(m => m.id === movieId);
-
-    if (!movie) {
-      document.body.innerHTML = "<h2 style='color:white;text-align:center;margin-top:50px'>Película no encontrada</h2>";
-    } else {
-      document.getElementById('movie-container').innerHTML = `
-        <section class="movie-hero">
-          <video src="${movie.trailerUrl}" autoplay muted loop playsinline></video>
-          <div class="overlay-gradient"></div>
-
-          <div class="movie-content">
-            <img src="${movie.poster}" alt="${movie.title}" class="poster">
-            <div class="info">
-              <h1>${movie.title}</h1>
-              <p class="meta">${movie.year} • ${movie.duration} • ${movie.rating}</p>
-              <p class="description">${movie.description}</p>
-
-              <div class="actions">
-                <button class="play">▶ Ver con Prime</button>
-                <button onclick="alert('Simulación: alquilar por ${movie.rentPrice}')">Alquilar ${movie.rentPrice}</button>
-                <button onclick="alert('Simulación: comprar por ${movie.buyPrice}')">Comprar ${movie.buyPrice}</button>
-                <button onclick="toggleLike(this)">❤️ Me gusta</button>
-                <button onclick="toggleList(this)">➕ Mi lista</button>
-                <button onclick="window.history.back()">← Volver</button>
-              </div>
-
-              <div class="genres">
-                ${movie.genres.map(g => `<span>${g}</span>`).join('')}
-              </div>
-            </div>
-          </div>
-        </section>
-      `;
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Share Films - Película</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #000;
+      color: #fff;
+      overflow-x: hidden;
     }
 
-    function toggleLike(btn) { btn.classList.toggle('liked'); }
-    function toggleList(btn) { btn.classList.toggle('added'); }
+    .movie-container {
+      position: relative;
+      width: 100%;
+      min-height: 100vh;
+      overflow: hidden;
+    }
+
+    .background-video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 0;
+      opacity: 0.4;
+    }
+
+    .movie-info {
+      position: relative;
+      z-index: 2;
+      padding: 60px 40px;
+      max-width: 900px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #ddd;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 10px;
+      margin-top: 20px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      background: #00a8e1;
+      color: #fff;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 1rem;
+    }
+
+    .btn:hover {
+      background: #008ec1;
+    }
+
+    .mute-btn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: rgba(0, 0, 0, 0.6);
+      border: none;
+      color: white;
+      font-size: 22px;
+      padding: 10px;
+      border-radius: 50%;
+      cursor: pointer;
+      z-index: 5;
+    }
+
+    .player {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 10;
+    }
+
+    .player video {
+      width: 90%;
+      max-width: 1000px;
+      height: auto;
+    }
+
+    .close-player {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      font-size: 24px;
+      color: white;
+      cursor: pointer;
+      z-index: 11;
+    }
+  </style>
+</head>
+<body>
+  <div class="movie-container">
+    <!-- Botón mute -->
+    <button class="mute-btn" id="muteBtn">🔇</button>
+
+    <!-- Tráiler de fondo -->
+    <video id="trailerVideo" class="background-video" autoplay muted loop playsinline>
+      <source src="https://drive.google.com/uc?export=download&id=1FTQh3ngY6CJmWgURjpCwuYHZMZWk-NY_" type="video/mp4" />
+    </video>
+
+    <!-- Información -->
+    <div class="movie-info" id="movieInfo">
+      <img src="images/into-the-spiderverse.jpeg" alt="Spider-Man: Un Nuevo Universo" style="width:250px;border-radius:8px;margin-bottom:20px;">
+      <h1>Spider-Man: Un Nuevo Universo</h1>
+      <p>
+        “Spider-Man: Un Nuevo Universo” presenta a Miles Morales, un adolescente de Brooklyn, y a las ilimitadas
+        posibilidades del nuevo universo de Spider-Man, donde más de uno puede llevar máscara.
+      </p>
+      <p><strong>IMDb:</strong> 8.4 • <strong>Duración:</strong> 1h 51m • <strong>Año:</strong> 2018</p>
+
+      <div class="buttons">
+        <button id="playMovie" class="btn">🎞️</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Reproductor -->
+  <div class="player" id="player">
+    <span class="close-player" id="closePlayer">✕</span>
+    <video id="mainMovie" controls>
+      <source src="https://drive.google.com/uc?export=download&id=1Gp-v1xvRausPDh9c88yxOSFusXM9dkwE" type="video/mp4" />
+      Tu navegador no soporta la reproducción de video.
+    </video>
+  </div>
+
+  <!-- Comentarios -->
+  <hr style="border:none;border-top:1px solid rgba(255,255,255,0.06);margin:20px 32px;">
+  <section class="comments" id="commentsSection" style="padding:0 32px 40px;max-width:900px">
+    <h2>Comentarios</h2>
+    <div id="commentsList" aria-live="polite"></div>
+    <div style="margin-top:12px">
+      <input id="commentName" placeholder="Tu nombre (opcional)" style="padding:8px;border-radius:6px;border:1px solid rgba(255,255,255,0.06);width:40%;margin-right:8px" />
+      <textarea id="commentText" placeholder="Deja un comentario..." style="width:100%;min-height:72px;margin-top:8px;padding:10px;border-radius:6px;border:1px solid rgba(255,255,255,0.06)"></textarea>
+      <div style="display:flex;gap:8px;margin-top:8px">
+        <button id="submitComment" class="btn">Comentar</button>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const trailer = document.getElementById("trailerVideo");
+    const muteBtn = document.getElementById("muteBtn");
+    const playMovieBtn = document.getElementById("playMovie");
+    const player = document.getElementById("player");
+    const closePlayer = document.getElementById("closePlayer");
+    const mainMovie = document.getElementById("mainMovie");
+
+    // Toggle mute
+    muteBtn.addEventListener("click", () => {
+      trailer.muted = !trailer.muted;
+      muteBtn.textContent = trailer.muted ? "🔇" : "🔊";
+    });
+
+    // Open player
+    playMovieBtn.addEventListener("click", () => {
+      player.style.display = "flex";
+      mainMovie.play();
+      trailer.pause();
+    });
+
+    // Close player
+    closePlayer.addEventListener("click", () => {
+      player.style.display = "none";
+      mainMovie.pause();
+      trailer.play();
+    });
+
+    // --- Comentarios (igual que antes) ---
+    const commentsList = document.getElementById('commentsList');
+    const commentName = document.getElementById('commentName');
+    const commentText = document.getElementById('commentText');
+    const submitComment = document.getElementById('submitComment');
+    commentName.value = localStorage.getItem('sf_user_name') || '';
+
+    async function loadComments(){
+      try{
+        const res = await fetch(`api/get_comments.php?id=spiderman`);
+        const data = await res.json();
+        commentsList.innerHTML = '';
+        if(!data || data.length===0){
+          commentsList.innerHTML = '<p style="opacity:0.7">Sin comentarios. Sé el primero.</p>'; return;
+        }
+        data.forEach(c=>{
+          const el = document.createElement('div');
+          el.style.padding='8px 12px';
+          el.style.borderRadius='8px';
+          el.style.marginBottom='8px';
+          el.style.background='rgba(255,255,255,0.02)';
+          el.innerHTML = `<strong>${escapeHtml(c.name || 'Anónimo')}</strong> <span style="opacity:0.6;font-size:12px;margin-left:8px">${escapeHtml(c.created_at)}</span><div style="margin-top:6px">${escapeHtml(c.text)}</div>`;
+          commentsList.appendChild(el);
+        });
+      }catch(e){ console.error(e); }
+    }
+
+    function escapeHtml(s){ if(!s) return ''; return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+    submitComment.addEventListener('click', async ()=>{
+      const name = commentName.value.trim();
+      const text = commentText.value.trim();
+      if(!text){ alert('Escribe un comentario'); return; }
+      localStorage.setItem('sf_user_name', name);
+      try{
+        const res = await fetch('api/add_comment.php', {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({movie_id:'spiderman', name, text})});
+        const data = await res.json();
+        if(data.success){ commentText.value=''; loadComments(); } else { alert('No se pudo guardar el comentario'); }
+      }catch(e){ console.error(e); alert('Error al enviar'); }
+    });
+
+    loadComments();
   </script>
 </body>
 </html>
