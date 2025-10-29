@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prime Style - Detalle</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="movie-container"></div>
+
+  <script src="script.js"></script>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const movieId = params.get('id');
+    const movie = movies.find(m => m.id === movieId);
+
+    if (!movie) {
+      document.body.innerHTML = "<h2 style='color:white;text-align:center;margin-top:50px'>Película no encontrada</h2>";
+    } else {
+      document.getElementById('movie-container').innerHTML = `
+        <section class="movie-hero">
+          <video src="${movie.trailerUrl}" autoplay muted loop playsinline></video>
+          <div class="overlay-gradient"></div>
+
+          <div class="movie-content">
+            <img src="${movie.poster}" alt="${movie.title}" class="poster">
+            <div class="info">
+              <h1>${movie.title}</h1>
+              <p class="meta">${movie.year} • ${movie.duration} • ${movie.rating}</p>
+              <p class="description">${movie.description}</p>
+
+              <div class="actions">
+                <button class="play">▶ Ver con Prime</button>
+                <button onclick="alert('Simulación: alquilar por ${movie.rentPrice}')">Alquilar ${movie.rentPrice}</button>
+                <button onclick="alert('Simulación: comprar por ${movie.buyPrice}')">Comprar ${movie.buyPrice}</button>
+                <button onclick="toggleLike(this)">❤️ Me gusta</button>
+                <button onclick="toggleList(this)">➕ Mi lista</button>
+                <button onclick="window.history.back()">← Volver</button>
+              </div>
+
+              <div class="genres">
+                ${movie.genres.map(g => `<span>${g}</span>`).join('')}
+              </div>
+            </div>
+          </div>
+        </section>
+      `;
+    }
+
+    function toggleLike(btn) { btn.classList.toggle('liked'); }
+    function toggleList(btn) { btn.classList.toggle('added'); }
+  </script>
+</body>
+</html>
