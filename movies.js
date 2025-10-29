@@ -4,6 +4,20 @@ const sampleTrailer = "https://www.w3schools.com/html/mov_bbb.mp4"; // Tráiler 
 
 const MOVIES = [
   {
+  id: "spiderman",
+  title: "Spider-Man: Un Nuevo Universo",
+  year: 2018,
+  duration: "1h 51min",
+  rating: "PG",
+  genres: ["Animación", "Acción", "Aventura"],
+  description: "Miles Morales, un adolescente de Brooklyn, descubre que puede ser Spider-Man y viaja por distintos universos donde conoce a otros Spider-gente.",
+  // imagen local (usa la que tienes en /images)
+  image: "images/into-the-spiderverse.jpeg",
+  // trailer y video en formato "descarga directa" de Google Drive (los que me diste)
+  trailer: "https://drive.google.com/uc?export=download&id=1FTQh3ngY6CJmWgURjpCwuYHZMZWk-NY_",
+  video: "https://drive.google.com/uc?export=download&id=1Gp-v1xvRausPDh9c88yxOSFusXM9dkwE"
+},
+  {
     id: "contracara",
     title: "Contracara",
     year: 1997,
