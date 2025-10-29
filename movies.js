@@ -55,7 +55,7 @@ const MOVIES = [
     description:
       "Daniel se muda a California y sufre acoso hasta que un sabio maestro de karate, el Sr. Miyagi, le enseña el arte del equilibrio y la disciplina.",
     trailerUrl: sampleTrailer,
-    image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/karatekid1984.jpeg",
+    image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/karate-kid.jpeg",
     rentPrice: "MX$50.00",
     buyPrice: "MX$139.00",
   },
@@ -69,7 +69,7 @@ const MOVIES = [
     description:
       "Leo San Juan y sus amigos viajan a Veracruz, donde descubren que unos traviesos chaneques están causando estragos en la región.",
     trailerUrl: sampleTrailer,
-    image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/laleyendadeloschaneques.jpeg",
+    image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/la-leyenda-de-los-chaneques.jpeg",
     rentPrice: "MX$40.00",
     buyPrice: "MX$120.00",
   },
@@ -83,7 +83,7 @@ const MOVIES = [
     description:
       "Eddie Brock y Venom están al borde de su última batalla cuando nuevas amenazas surgen y la línea entre héroe y villano se desdibuja.",
     trailerUrl: sampleTrailer,
-    image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/venom3.jpeg",
+    image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/venom-3.jpeg",
     rentPrice: "MX$80.00",
     buyPrice: "MX$220.00",
   },
@@ -97,7 +97,7 @@ const MOVIES = [
     description:
       "Un científico descubre accidentalmente una forma de detener el tiempo, pero pronto se da cuenta de que cada segundo congelado tiene un precio terrible.",
     trailerUrl: sampleTrailer,
-    image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/tiempocongelado.jpeg",
+    image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/tiempo-congelado.jpeg",
     rentPrice: "MX$70.00",
     buyPrice: "MX$199.00",
   },
