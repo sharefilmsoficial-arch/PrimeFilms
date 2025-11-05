@@ -129,8 +129,20 @@ const MOVIES = [
     genres: ["Animación, Aventura"],
     description:"Hipo y Chimuelo se enfrentan a cazadores de dragones para evitar la guerra.",
     trailerUrl: sampleTrailer,
-    image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/lightyear.jpeg",
+    image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/dragon2.jpeg",
     movie: "https://drive.google.com/file/d/1HoxHuCgIgetLZk6nuFE6nN9a_1YK9Py_/preview"
+  },
+  {
+    id: "how-train-your-dragon-3",
+    title: "Cómo Entrenar a tu Dragón 3 - El Mundo Oculto",
+    year:2019,
+    duration: "h min",
+    rating: "PG-13",
+    genres: [""],
+    description:"",
+    trailerUrl: sampleTrailer,
+    image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/dragon3.jpeg",
+    movie: "preview"
   },
 ];
 
