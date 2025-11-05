@@ -15,7 +15,7 @@ const MOVIES = [
   image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/into-the-spiderverse.jpeg",
   // trailer y video en formato "descarga directa" de Google Drive (los que me diste)
   trailer: "https://drive.google.com/file/d/1wM0twYUIFIJ3o8oX1nyjbsyfpDwkH-cS/preview",
-  video: "https://drive.google.com/file/d/11SMv4hmFUM71MWcPYm5qXf5j-tJgeAWp/preview"
+  movie: "https://drive.google.com/file/d/11SMv4hmFUM71MWcPYm5qXf5j-tJgeAWp/preview"
 },
   {
     id: "contracara",
@@ -28,8 +28,7 @@ const MOVIES = [
       "Un agente del FBI se somete a una cirugía experimental para asumir la identidad del terrorista que mató a su hijo. Pero las cosas salen terriblemente mal.",
     trailerUrl: sampleTrailer,
     image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/contracara.jpeg",
-    rentPrice: "MX$60.00",
-    buyPrice: "MX$159.00",
+  movie: "https://drive.google.com/file/d/11SMv4hmFUM71MWcPYm5qXf5j-tJgeAWp/preview"
   },
   {
     id: "interestelar",
@@ -42,8 +41,7 @@ const MOVIES = [
       "Un grupo de astronautas viaja a través de un agujero de gusano en busca de un nuevo hogar para la humanidad mientras la Tierra agoniza.",
     trailerUrl: sampleTrailer,
     image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/interestelar.jpeg",
-    rentPrice: "MX$75.00",
-    buyPrice: "MX$199.00",
+    movie: "https://drive.google.com/file/d/11SMv4hmFUM71MWcPYm5qXf5j-tJgeAWp/preview"
   },
   {
     id: "karatekid1984",
