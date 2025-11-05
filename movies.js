@@ -12,7 +12,7 @@ const MOVIES = [
   genres: ["Animación", "Acción", "Aventura"],
   description: "Miles Morales, un adolescente de Brooklyn, descubre que puede ser Spider-Man y viaja por distintos universos donde conoce a otros Spider-gente.",
   // imagen local (usa la que tienes en /images)
-  image: "images/into-the-spiderverse.jpeg",
+  image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/into-the-spiderverse.jpeg",
   // trailer y video en formato "descarga directa" de Google Drive (los que me diste)
   trailer: "https://drive.google.com/file/d/1wM0twYUIFIJ3o8oX1nyjbsyfpDwkH-cS/preview",
   video: "https://drive.google.com/file/d/11SMv4hmFUM71MWcPYm5qXf5j-tJgeAWp/preview"
