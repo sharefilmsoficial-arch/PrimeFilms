@@ -46,15 +46,37 @@ if(!movie){
 
 qs('#title').textContent = movie.title;
 qs('#meta').textContent = `${movie.year || ''} • ${movie.duration || ''} • ${movie.rating || ''}`;
-
+//según funcionara el trailer//
+const hero = qs('#hero');
 const bg = qs('#bgVideo');
-if(movie.trailer){
-  bg.src = movie.trailer;
-  bg.load();
-  bg.play().catch(()=>{});
+
+if (movie.trailer) {
+  if (movie.trailer.includes("drive.google.com")) {
+    // Reemplazar el video por un iframe de Google Drive
+    const iframe = document.createElement("iframe");
+    iframe.src = movie.trailer;
+    iframe.width = "100%";
+    iframe.height = "100%";
+    iframe.allow = "autoplay";
+    iframe.frameBorder = "0";
+    iframe.style.position = "absolute";
+    iframe.style.top = "0";
+    iframe.style.left = "0";
+    iframe.style.width = "100%";
+    iframe.style.height = "100%";
+    iframe.style.objectFit = "cover";
+    iframe.style.zIndex = "0";
+    
+    bg.remove(); // quitar el <video>
+    hero.prepend(iframe);
+  } else {
+    // Reproduce el video normalmente
+    bg.src = movie.trailer;
+    bg.load();
+    bg.play().catch(()=>{});
+  }
 } else {
-  // if no trailer, hide video
-  qs('#hero').classList.add('no-video');
+  hero.classList.add('no-video');
 }
 
 qs('#playMovie').addEventListener('click', ()=>{
