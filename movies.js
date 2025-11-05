@@ -6,11 +6,11 @@ const MOVIES = [
   {
   id: "across-the-spiderverse",
   title: "Spider-Man: A través del Spiderverso",
-  year: 2018,
-  duration: "1h 51min",
+  year: 2023,
+  duration: "2h 20min 05s",
   rating: "PG",
-  genres: ["Animación", "Acción", "Aventura"],
-  description: "Miles Morales, un adolescente de Brooklyn, descubre que puede ser Spider-Man y viaja por distintos universos donde conoce a otros Spider-gente.",
+  genres: ["Animación", "Acción", "Aventura", "Superhéroes"],
+  description: "Luego de ser mordido por una araña radioactiva, Miles Morales desarrolla misteriosos poderes que lo transforman en el Hombre Araña. Ahora deberá usar sus nuevas habilidades ante el malvado Kingpin, un enorme demente que puede abrir portales hacia otros universos.",
   // imagen local (usa la que tienes en /images)
   image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/images/across-the-spiderverse.jpeg",
   // trailer y video en formato "descarga directa" de Google Drive (los que me diste)
@@ -18,10 +18,10 @@ const MOVIES = [
   movie: "https://drive.google.com/file/d/11SMv4hmFUM71MWcPYm5qXf5j-tJgeAWp/preview"
 },
   {
-    id: "contracara",
+    id: "face-off",
     title: "Contracara",
     year: 1997,
-    duration: "2h 18min",
+    duration: "2h 18min 57s",
     rating: "R",
     genres: ["Acción", "Thriller", "Crimen"],
     description:
@@ -95,6 +95,20 @@ const MOVIES = [
     image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/tiempo-congelado.jpeg",
     movie: "https://drive.google.com/file/d/1-I98WaJ_C622i2YMeBFjcEn43808KgmR/preview"
   },
+  {
+    id: "Lightyear",
+    title: "Lightyear",
+    year: 2022,
+    duration: "??",
+    rating: "PG-13",
+    genres: ["Animación, Aventura"],
+    description:
+      "Buzz y Alisha exploran el planeta T'Kani Prime y viven aventuras en el espacio-tiempo.",
+    trailerUrl: sampleTrailer,
+    image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/lightyear.jpeg",
+    movie: "https://drive.google.com/file/d/1m5gLKdgBV2loj5qCDIgLakOnUS7SN5T4/preview"
+  },
+  
 ];
 
 // (Opcional) Exponerlo globalmente (ya lo hace const, pero por compatibilidad)
