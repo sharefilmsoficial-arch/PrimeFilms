@@ -82,8 +82,8 @@ const MOVIES = [
     image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/venom-3.jpeg",
     movie: "https://drive.google.com/file/d/1-I98WaJ_C622i2YMeBFjcEn43808KgmR/preview"
   },
-  {
-    id: "tiempocongelado",
+ {
+    id: "clockstoppers",
     title: "Tiempo Congelado",
     year: 2024,
     duration: "1h 55min",
@@ -142,9 +142,104 @@ const MOVIES = [
     description:"",
     trailerUrl: sampleTrailer,
     image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/dragon3.jpeg",
+    movie: "https://drive.google.com/file/d/1x4CYvRvkriWKcL2aE0nqOJY1tPAq71I2/preview"
+  },
+  {
+    id: "Avatar2-elcaminodelagua",
+    title: "Avatar 2 - El Camino del agua",
+    year: 2022,
+    duration: "h min",
+    rating: "PG-13",
+    genres: [""],
+    description:"",
+    trailerUrl: sampleTrailer,
+    image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/avatar2.jpeg",
+    movie: "https://drive.google.com/file/d/12RRSn0kLKUea3RbJlg32Z7zLZE7v__B5/preview"
+  },
+  {
+    id: "Flow",
+    title: "Flow",
+    year: 2024,
+    duration: "h min",
+    rating: "PG-13",
+    genres: [""],
+    description:"",
+    trailerUrl: sampleTrailer,
+    image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/flow.jpeg",
+    movie: "https://drive.google.com/file/d/1VVd1JCyxkHXGpsYr-3-SaD68pijn1XFS/preview"
+  },
+  {
+    id: "Spiderman-into-the-spiderverse",
+    title: "Spiderman - Un Nuevo Universo",
+    year: 2018,
+    duration: "h min",
+    rating: "PG-13",
+    genres: [""],
+    description:"",
+    trailerUrl: sampleTrailer,
+    image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/into-the-spiderverse.jpeg",
+    movie: "https://drive.google.com/file/d/1Gp-v1xvRausPDh9c88yxOSFusXM9dkwE/preview"
+  },
+  {
+    id: "get-out",
+    title: "Huye",
+    year: 2017,
+    duration: "h min",
+    rating: "PG-13",
+    genres: [""],
+    description:"",
+    trailerUrl: sampleTrailer,
+    image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/get-out.jpeg",
+    movie: "https://drive.google.com/file/d/1en6HYU4w0GfvSf3PT8ZAqcxzbHvCcjHB/preview"
+  },
+  {
+    id: "Rango",
+    title: "Rango",
+    year: ,
+    duration: "h min",
+    rating: "PG-13",
+    genres: [""],
+    description:"",
+    trailerUrl: sampleTrailer,
+    image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/.jpeg",
+    movie: "preview"
+  },
+  {
+    id: "K-Pop-Hunters",
+    title: "LAs Guerreras K-Pop",
+    year: ,
+    duration: "h min",
+    rating: "PG-13",
+    genres: [""],
+    description:"",
+    trailerUrl: sampleTrailer,
+    image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/.jpeg",
+    movie: "preview"
+  },
+  {
+    id: "fast-and-furius5",
+    title: "Rápidos y Furiosos 5ntrol ",
+    year: ,
+    duration: "h min",
+    rating: "PG-13",
+    genres: [""],
+    description:"",
+    trailerUrl: sampleTrailer,
+    image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/.jpeg",
+    movie: "preview"
+  },
+  {
+    id: "miraculous-awakenig",
+    title: "Miraculous Awakening",
+    year: ,
+    duration: "h min",
+    rating: "PG-13",
+    genres: [""],
+    description:"",
+    trailerUrl: sampleTrailer,
+    image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/.jpeg",
     movie: "preview"
   },
 ];
-
 // (Opcional) Exponerlo globalmente (ya lo hace const, pero por compatibilidad)
 window.MOVIES = MOVIES;
