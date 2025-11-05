@@ -93,7 +93,7 @@ const MOVIES = [
       "Un científico descubre accidentalmente una forma de detener el tiempo, pero pronto se da cuenta de que cada segundo congelado tiene un precio terrible.",
     trailerUrl: sampleTrailer,
     image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/tiempo-congelado.jpeg",
-    movie: "https://drive.google.com/file/d/1-I98WaJ_C622i2YMeBFjcEn43808KgmR/preview"
+    movie: "https://drive.google.com/file/d/1mi8Ltlqx01KVDLKIIQXL0l05A_i5endV/preview"
   },
   {
     id: "Lightyear",
