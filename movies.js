@@ -5,14 +5,14 @@ const sampleTrailer = "https://www.w3schools.com/html/mov_bbb.mp4"; // Tráiler 
 const MOVIES = [
   {
   id: "spiderman",
-  title: "Spider-Man: Un Nuevo Universo",
+  title: "Spider-Man: A través del Spiderverso",
   year: 2018,
   duration: "1h 51min",
   rating: "PG",
   genres: ["Animación", "Acción", "Aventura"],
   description: "Miles Morales, un adolescente de Brooklyn, descubre que puede ser Spider-Man y viaja por distintos universos donde conoce a otros Spider-gente.",
   // imagen local (usa la que tienes en /images)
-  image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/into-the-spiderverse.jpeg",
+  image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/images/across-the-spiderverse.jpeg",
   // trailer y video en formato "descarga directa" de Google Drive (los que me diste)
   trailer: "https://drive.google.com/file/d/1wM0twYUIFIJ3o8oX1nyjbsyfpDwkH-cS/preview",
   movie: "https://drive.google.com/file/d/11SMv4hmFUM71MWcPYm5qXf5j-tJgeAWp/preview"
