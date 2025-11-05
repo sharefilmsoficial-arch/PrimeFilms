@@ -4,7 +4,7 @@ const sampleTrailer = "https://www.w3schools.com/html/mov_bbb.mp4"; // Tráiler 
 
 const MOVIES = [
   {
-  id: "spiderman",
+  id: "across-the-spiderverse",
   title: "Spider-Man: A través del Spiderverso",
   year: 2018,
   duration: "1h 51min",
