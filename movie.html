@@ -52,9 +52,14 @@ const bg = qs('#bgVideo');
 
 if (movie.trailer) {
   if (movie.trailer.includes("drive.google.com")) {
-    // Reemplazar el video por un iframe de Google Drive
+    // Forzar autoplay del iframe de Google Drive
+    let autoplayURL = movie.trailer;
+    if (!autoplayURL.includes("autoplay=1")) {
+      autoplayURL += (autoplayURL.includes("?") ? "&" : "?") + "autoplay=1";
+    }
+
     const iframe = document.createElement("iframe");
-    iframe.src = movie.trailer;
+    iframe.src = autoplayURL;
     iframe.width = "100%";
     iframe.height = "100%";
     iframe.allow = "autoplay";
@@ -66,11 +71,11 @@ if (movie.trailer) {
     iframe.style.height = "100%";
     iframe.style.objectFit = "cover";
     iframe.style.zIndex = "0";
-    
+
     bg.remove(); // quitar el <video>
     hero.prepend(iframe);
   } else {
-    // Reproduce el video normalmente
+    // reproducir video normal
     bg.src = movie.trailer;
     bg.load();
     bg.play().catch(()=>{});
@@ -78,6 +83,7 @@ if (movie.trailer) {
 } else {
   hero.classList.add('no-video');
 }
+///fin tráiler/
 
 qs('#playMovie').addEventListener('click', ()=>{
   if(movie.movie && movie.movie.startsWith('http')){
