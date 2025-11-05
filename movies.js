@@ -14,8 +14,8 @@ const MOVIES = [
   // imagen local (usa la que tienes en /images)
   image: "images/into-the-spiderverse.jpeg",
   // trailer y video en formato "descarga directa" de Google Drive (los que me diste)
-  trailer: "https://drive.google.com/uc?export=download&id=1FTQh3ngY6CJmWgURjpCwuYHZMZWk-NY_",
-  video: "https://drive.google.com/uc?export=download&id=1Gp-v1xvRausPDh9c88yxOSFusXM9dkwE"
+  trailer: "https://drive.google.com/file/d/1wM0twYUIFIJ3o8oX1nyjbsyfpDwkH-cS/preview",
+  video: "https://drive.google.com/file/d/11SMv4hmFUM71MWcPYm5qXf5j-tJgeAWp/preview"
 },
   {
     id: "contracara",
