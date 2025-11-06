@@ -254,13 +254,25 @@ const MOVIES = [
     id: "miraculous-world1",
     title: "Miraculous World Nueva York: Héroes Unidos",
     year: 2020,
-    duration: "1h 00min",
+    duration: "1h 03min",
     rating: "PG-",
     genres: ["Animación", "Aventura","Infantil"],
     description:"Con motivo de la semana de la amistad franco-estadounidense, Marinette y su clase viajan a Nueva York: la ciudad de los superhéroes. Es la oportunidad para que Marinette pase tiempo con sus amigos.",
     trailerUrl: sampleTrailer,
     image: "images/miraculous-world1.jpg",
     movie: "https://drive.google.com/file/d/1ecnnRiojJW5TyOnhw2uVcHT7bBXPuTEQ/preview"
+  },
+  {
+    id: "miraculous-world2",
+    title: "Miraculous World Shangai: La Leyenda de LadyDragon",
+    year: 2020,
+    duration: "52min",
+    rating: "PG-",
+    genres: ["Animación", "Aventura","Infantil"],
+    description:"Con motivo de la semana de la amistad franco-estadounidense, Marinette y su clase viajan a Nueva York: la ciudad de los superhéroes. Es la oportunidad para que Marinette pase tiempo con sus amigos.",
+    trailerUrl: sampleTrailer,
+    image: "images/miraculous-world2.jpg",
+    movie: "https://drive.google.com/file/d/1F6bDAra19utQdnTRw4E36Smr262Ehu-9/preview"
   },
   {
     id: "miraculous-awakening",
