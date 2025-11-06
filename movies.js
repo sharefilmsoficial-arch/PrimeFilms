@@ -71,11 +71,11 @@ const MOVIES = [
   {
     id: "karate-kid-legends",
     title: "Karate Kid Leyendas",
-    year: 2023,
-    duration: "1h 45min",
+    year: 2025,
+    duration: "1h 34min",
     rating: "PG",
-    genres: ["Animación", "Aventura", "Romance"],
-    description:"Marinette y Adrien enfrentan nuevos desafíos como Ladybug y Cat Noir en su primera aventura cinematográfica.",
+    genres: ["Infantil","Acción"],
+    description:"Tras mudarse a Nueva York, el prodigio del kung fu Li Fong atrae una atención no deseada y se embarca en un viaje para participar en la competición de karate definitiva. Li fusiona sus estilos únicos para prepararse para un épico enfrentamiento.",
     trailerUrl: sampleTrailer,
     image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/karate-legends.jpeg",
     movie: "https://drive.google.com/file/d/1A26SVMjdf0MWh_HmFkXG_qtOv_C4lYK2/preview"
@@ -87,8 +87,7 @@ const MOVIES = [
     duration: "1h 25min",
     rating: "A",
     genres: ["Animación", "Fantasía", "Aventura"],
-    description:
-      "Leo San Juan y sus amigos viajan a Veracruz, donde descubren que unos traviesos chaneques están causando estragos en la región.",
+    description: "Leo San Juan y sus amigos viajan a Veracruz, donde descubren que unos traviesos chaneques están causando estragos en la región.",
     trailerUrl: sampleTrailer,
     image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/la-leyenda-de-los-chaneques.jpeg",
     movie: "https://drive.google.com/file/d/1j2-DvVDho1-u6DoJhZpr3fG6mpyAMGL5/preview"
@@ -112,8 +111,7 @@ const MOVIES = [
     duration: "1h 55min",
     rating: "PG-13",
     genres: ["Suspenso", "Drama", "Ciencia ficción"],
-    description:
-      "Un científico descubre accidentalmente una forma de detener el tiempo, pero pronto se da cuenta de que cada segundo congelado tiene un precio terrible.",
+    description: "Un científico descubre accidentalmente una forma de detener el tiempo, pero pronto se da cuenta de que cada segundo congelado tiene un precio terrible.",
     trailerUrl: sampleTrailer,
     image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/tiempo-congelado.jpeg",
     movie: "https://drive.google.com/file/d/1mi8Ltlqx01KVDLKIIQXL0l05A_i5endV/preview"
@@ -125,8 +123,7 @@ const MOVIES = [
     duration: "1h 45min",
     rating: "PG",
     genres: ["Animación", "Aventura"],
-    description:
-      "Buzz y Alisha exploran el planeta T'Kani Prime y viven aventuras en el espacio-tiempo.",
+    description: "Buzz y Alisha exploran el planeta T'Kani Prime y viven aventuras en el espacio-tiempo.",
     trailerUrl: sampleTrailer,
     image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/lightyear.jpeg",
     movie: "https://drive.google.com/file/d/1m5gLKdgBV2loj5qCDIgLakOnUS7SN5T4/preview"
@@ -135,9 +132,9 @@ const MOVIES = [
     id: "mufasa",
     title: "Mufasa - El Rey León",
     year: 2024,
-    duration: "1h 55min",
+    duration: "1h 58min",
     rating: "PG-13",
-    genres: ["Animación", "Drama"],
+    genres: ["Aventura","Musical"],
     description:"Una inundación separa al cachorro Mufasa de sus padres, pero el rey de los leones lo acoge como a uno de los suyos tras demostrar su valentía. Al crecer, una manada de leones desterrados y los celos de su hermana adoptiva lo pondrán en peligro.",
     trailerUrl: sampleTrailer,
     image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/mufasa.jpeg",
@@ -149,7 +146,7 @@ const MOVIES = [
     year: 2014,
     duration: "1h 42min",
     rating: "PG",
-    genres: ["Animación", "Aventura"],
+    genres: ["Animación","Aventura","Infantil","Acción"],
     description:"Hipo y Chimuelo se enfrentan a cazadores de dragones para evitar la guerra.",
     trailerUrl: sampleTrailer,
     image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/dragon2.jpeg",
@@ -161,7 +158,7 @@ const MOVIES = [
     year: 2019,
     duration: "1h 44min",
     rating: "PG",
-    genres: ["Animación", "Aventura"],
+    genres: ["Animación","Aventura","Infantil","Acción"],
     description:
       "Hipo y Chimuelo descubren un mundo oculto mientras luchan por proteger a su gente y a los dragones.",
     trailerUrl: sampleTrailer,
@@ -176,7 +173,7 @@ const MOVIES = [
     genres: ["Ciencia ficción", "Aventura"],
     description: "Jake Sully y Neytiri deben proteger a su familia de nuevas amenazas en Pandora mientras exploran las profundidades oceánicas del planeta.",
     trailerUrl: sampleTrailer,
-    image: "image/avatar.jpg",
+    image: "images/avatar.jpg",
     movie: "https://drive.google.com/file/d/16JSSJ3zfvpZGG7zNGXqZ2DicCFyqrfGU/preview"
   },
   {
@@ -212,8 +209,7 @@ const MOVIES = [
     duration: "1h 44min",
     rating: "R",
     genres: ["Terror", "Suspenso"],
-    description:
-      "Chris visita a los padres de su novia, pero descubre un siniestro secreto detrás de su aparente amabilidad.",
+    description: "Chris visita a los padres de su novia, pero descubre un siniestro secreto detrás de su aparente amabilidad.",
     trailerUrl: sampleTrailer,
     image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/images/get-out.jpeg",
     movie: "https://drive.google.com/file/d/1en6HYU4w0GfvSf3PT8ZAqcxzbHvCcjHB/preview"
@@ -225,8 +221,7 @@ const MOVIES = [
     duration: "1h 47min",
     rating: "PG",
     genres: ["Animación", "Aventura", "Comedia"],
-    description:
-      "Un camaleón doméstico se convierte en el héroe de un pueblo del Viejo Oeste.",
+    description: "Un camaleón doméstico se convierte en el héroe de un pueblo del Viejo Oeste.",
     trailerUrl: sampleTrailer,
     image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/images/rango.jpeg",
     movie: "https://drive.google.com/file/d/1SB357lg3QIGL5RvdfrJQ53_1jmnHNv7u/preview"
@@ -234,11 +229,11 @@ const MOVIES = [
   {
     id: "kpop-hunters",
     title: "Las Guerreras K-Pop",
-    year: 2024,
-    duration: "1h 30min",
+    year: 2025,
+    duration: "1h 36min",
     rating: "PG-13",
-    genres: ["Acción", "Música"],
-    description: "Un grupo de chicas K-Pop debe enfrentarse a un complot internacional mientras están de gira.",
+    genres: ["Acción", "Músical"],
+    description: "Cuando no están llenando estadios, las superestrellas del k-pop Rumi, Mira y Zoey usan sus superpoderes secretos para proteger a sus fans de Gwi-Ma y los demonios.",
     trailerUrl: sampleTrailer,
     image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/huntrix.jpeg",
     movie: "https://drive.google.com/file/u/0/d/1yn5s7n8Cf3hnMtJdND3xG6gMq0DO3kfO/preview"
@@ -259,10 +254,10 @@ const MOVIES = [
     id: "miraculous-awakening",
     title: "Miraculous: Awakening",
     year: 2023,
-    duration: "1h 45min",
+    duration: "1h 39min",
     rating: "PG",
-    genres: ["Animación", "Aventura", "Romance"],
-    description:"Marinette y Adrien enfrentan nuevos desafíos como Ladybug y Cat Noir en su primera aventura cinematográfica.",
+    genres: ["Animación", "Aventura", "Romance","Infantil","Músical"],
+    description:"Un guardián de joyas mágicas convierte a una chica peculiar y a un chico popular en superhéroes. No obstante, jamás podrán revelar su verdadera identidad, ni siquiera el uno al otro.",
     trailerUrl: sampleTrailer,
     image: "images/miraculous-awakening.jpg",
     movie: "https://drive.google.com/file/d/1gvC_tMJHRTwnlA9nz8jN6Et1KhxDv9_X/preview"
@@ -270,11 +265,11 @@ const MOVIES = [
   {
     id: "sonic-the-hedgehog",
     title: "Sonic",
-    year: 2023,
-    duration: "1h 45min",
+    year: 2020,
+    duration: "1h 39min",
     rating: "PG",
-    genres: ["Animación", "Aventura", "Romance"],
-    description:"Marinette y Adrien enfrentan nuevos desafíos como Ladybug y Cat Noir en su primera aventura cinematográfica.",
+    genres: ["Infantil","Comedia"],
+    description:"Sonic intenta atravesar las complejidades de la vida en la Tierra con su nuevo mejor amigo, un humano llamado Tom Wachowski. Deberán unir sus fuerzas para evitar que el malvado Dr. Robotnik capture a Sonic y use sus poderes para dominar el mundo.",
     trailerUrl: sampleTrailer,
     image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/images/sonic.jpeg",
     movie: "https://drive.google.com/file/d/1aYLsDe1HnNSqVjS7v_tiT-ztdcG3z7eU/preview"
@@ -282,11 +277,11 @@ const MOVIES = [
   {
     id: "sonic-the-hedgehog-2",
     title: "Sonic 2",
-    year: 2023,
-    duration: "1h 45min",
+    year: 2022,
+    duration: "2h 2min",
     rating: "PG",
-    genres: ["Animación", "Aventura", "Romance"],
-    description:"Marinette y Adrien enfrentan nuevos desafíos como Ladybug y Cat Noir en su primera aventura cinematográfica.",
+    genres: ["Infantil","Acción""],
+    description:"Después de establecerse en Green Hills, Sonic quiere demostrar que tiene la madures de ser héroe. La prueba de fuego llega con el retorno del malvado Robotnik, y su nuevo compinche, Knuckles, en busca de una esmeralda que destruye civilizaciones. Sonic forma equipo con su propio compañero de fatigas, Tails, y juntos se lanzan a una aventura que les llevará por todo el mundo en busca de la preciada piedra para evitar que caiga en manos equivocadas.",
     trailerUrl: sampleTrailer,
     image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/images/sonic2.jpeg",
     movie: "https://drive.google.com/file/d/1F6fK3gCNh5afr7ARKLWIRgvZ6iyUWnko/preview"
@@ -295,10 +290,10 @@ const MOVIES = [
     id: "five-nights-at-freddys",
     title: "Five Nights At Fredyy's",
     year: 2023,
-    duration: "1h 45min",
+    duration: "1h 50min",
     rating: "PG",
-    genres: ["Animación", "Aventura", "Romance"],
-    description:"Marinette y Adrien enfrentan nuevos desafíos como Ladybug y Cat Noir en su primera aventura cinematográfica.",
+    genres: ["Terror","Misterio"],
+    description:"Mike Schmidt, un guardia de seguridad con problemas que empieza a trabajar en el turno de noche de la abandonada pizzería Freddy Fazbear's Pizza. A medida que pasa sus noches en el trabajo, descubre que las mascotas animatrónicas del lugar cobran vida de manera aterradora, lo que lleva a situaciones de suspense y terror. La trama explora el oscuro secreto de la pizzería, donde los animatrónicos están poseídos por las almas de niños secuestrados.",
     trailerUrl: sampleTrailer,
     image: "images/fnaf.jpg",
     movie: "https://drive.google.com/file/d/1NTEnMppzmWsNF0ufujXQp_6tr9i09JPF/preview"
@@ -307,10 +302,10 @@ const MOVIES = [
     id: "logan-wolverine",
     title: "Logan - Wolverine",
     year: 2017,
-    duration: "1h 45min",
+    duration: "2h 17min",
     rating: "PG",
-    genres: ["Animación", "Aventura", "Romance"],
-    description:"Marinette y Adrien enfrentan nuevos desafíos como Ladybug y Cat Noir en su primera aventura cinematográfica.",
+    genres: ["Animación", "Ciencia Ficción", "Superhéroes"],
+    description:"En un futuro cercano donde los mutantes están casi extintos, un cansado y envejecido Logan, cuyos poderes curativos están disminuyendo, se gana la vida como conductor de limusinas y cuida a un Profesor X enfermo y debilitado. Su vida cambia drásticamente cuando una mujer le pide que proteja a una joven mutante llamada Laura, quien es perseguida por fuerzas oscuras y posee poderes similares a los de él. Juntos, Logan, Charles y Laura emprenden un viaje para llevar a la niña a un refugio seguro llamado «Edén», enfrentándose a una peligrosa conspiración mientras Logan busca la redención.",
     trailerUrl: sampleTrailer,
     image: "images/logan-wolverine.jpg",
     movie: "https://drive.google.com/file/d/11LZONN67ENZ7vo7wPpIPg2c6K4RzqLqW/preview"
@@ -319,10 +314,10 @@ const MOVIES = [
     id: "deadpool3",
     title: "DeadPool 3",
     year: 2024,
-    duration: "1h 45min",
+    duration: "2h 08min",
     rating: "PG",
-    genres: ["Animación", "Aventura", "Romance"],
-    description:"Marinette y Adrien enfrentan nuevos desafíos como Ladybug y Cat Noir en su primera aventura cinematográfica.",
+    genres: ["Comedia", "Acción"],
+    description:"Wade Wilson (Deadpool) abandona su retiro para unirse a una versión alterna de Wolverine, con el objetivo de salvar el multiverso de una amenaza externa. La historia comienza cuando la Autoridad de Variación Temporal (TVA) interrumpe la vida de Wade, llevándolo a una misión para enfrentar una crisis que podría borrar su universo de la existencia.",
     trailerUrl: sampleTrailer,
     image: "images/deadpool3.jpg",
     movie: "https://drive.google.com/file/d/1w9pPohiLbkp3GTjTJNqPsh60khrX68Ab/preview"
