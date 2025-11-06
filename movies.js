@@ -5,7 +5,7 @@ const sampleTrailer = "https://www.w3schools.com/html/mov_bbb.mp4"; // Tráiler 
 const MOVIES = [
   {
     id: "spiderman-into-the-spiderverse",
-    title: "Spiderman - Un Nuevo Universo",
+    title: "Spiderman: Un Nuevo Universo",
     year: 2018,
     duration: "1h 56min",
     rating: "PG",
@@ -18,7 +18,7 @@ const MOVIES = [
   },
   {
     id: "across-the-spiderverse",
-    title: "Spider-Man: A través del Spiderverso",
+    title: "Spider-Man 2: A través del Spiderverso",
     year: 2023,
     duration: "2h 20min 05s",
     rating: "PG",
@@ -67,6 +67,18 @@ const MOVIES = [
     trailerUrl: sampleTrailer,
     image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/karate-kid.jpeg",
     movie: "https://drive.google.com/file/d/1vytWPJ8SuHa5cLsXWXQFHsCA26jYspc5/preview"
+  },
+  {
+    id: "karate-kid-legends",
+    title: "Karate Kid Leyendas",
+    year: 2023,
+    duration: "1h 45min",
+    rating: "PG",
+    genres: ["Animación", "Aventura", "Romance"],
+    description:"Marinette y Adrien enfrentan nuevos desafíos como Ladybug y Cat Noir en su primera aventura cinematográfica.",
+    trailerUrl: sampleTrailer,
+    image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/karate-legends.jpeg",
+    movie: "https://drive.google.com/file/d/1A26SVMjdf0MWh_HmFkXG_qtOv_C4lYK2/preview"
   },
   {
     id: "laleyendadeloschaneques",
@@ -267,18 +279,6 @@ const MOVIES = [
     trailerUrl: sampleTrailer,
     image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/images/sonic2.jpeg",
     movie: "https://drive.google.com/file/d/1F6fK3gCNh5afr7ARKLWIRgvZ6iyUWnko/preview"
-  },
-  {
-    id: "karate-kid-legends",
-    title: "Karate Kid Leyendas",
-    year: 2023,
-    duration: "1h 45min",
-    rating: "PG",
-    genres: ["Animación", "Aventura", "Romance"],
-    description:"Marinette y Adrien enfrentan nuevos desafíos como Ladybug y Cat Noir en su primera aventura cinematográfica.",
-    trailerUrl: sampleTrailer,
-    image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/karate-legends.jpeg",
-    movie: "https://drive.google.com/file/d/1A26SVMjdf0MWh_HmFkXG_qtOv_C4lYK2/preview"
   },
   {
     id: "five-nights-at-freddys",
