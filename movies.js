@@ -4,19 +4,18 @@ const sampleTrailer = "https://www.w3schools.com/html/mov_bbb.mp4"; // Tráiler 
 
 const MOVIES = [
   {
-  id: "across-the-spiderverse",
-  title: "Spider-Man: A través del Spiderverso",
-  year: 2023,
-  duration: "2h 20min 05s",
-  rating: "PG",
-  genres: ["Animación", "Acción", "Aventura", "Superhéroes"],
-  description: "Luego de ser mordido por una araña radioactiva, Miles Morales desarrolla misteriosos poderes que lo transforman en el Hombre Araña. Ahora deberá usar sus nuevas habilidades ante el malvado Kingpin, un enorme demente que puede abrir portales hacia otros universos.",
-  // imagen local (usa la que tienes en /images)
-  image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/images/across-the-spiderverse.jpeg",
-  // trailer y video en formato "descarga directa" de Google Drive (los que me diste)
-  trailer: "https://drive.google.com/file/d/1wM0twYUIFIJ3o8oX1nyjbsyfpDwkH-cS/preview",
-  movie: "https://drive.google.com/file/d/11SMv4hmFUM71MWcPYm5qXf5j-tJgeAWp/preview"
-},
+    id: "across-the-spiderverse",
+    title: "Spider-Man: A través del Spiderverso",
+    year: 2023,
+    duration: "2h 20min 05s",
+    rating: "PG",
+    genres: ["Animación", "Acción", "Aventura", "Superhéroes"],
+    description:
+      "Luego de ser mordido por una araña radioactiva, Miles Morales desarrolla misteriosos poderes que lo transforman en el Hombre Araña. Ahora deberá usar sus nuevas habilidades ante el malvado Kingpin, un enorme demente que puede abrir portales hacia otros universos.",
+    image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/images/across-the-spiderverse.jpeg",
+    trailerUrl: "https://drive.google.com/file/d/1wM0twYUIFIJ3o8oX1nyjbsyfpDwkH-cS/preview",
+    movie: "https://drive.google.com/file/d/11SMv4hmFUM71MWcPYm5qXf5j-tJgeAWp/preview"
+  },
   {
     id: "face-off",
     title: "Contracara",
@@ -28,7 +27,7 @@ const MOVIES = [
       "Un agente del FBI se somete a una cirugía experimental para asumir la identidad del terrorista que mató a su hijo. Pero las cosas salen terriblemente mal.",
     trailerUrl: sampleTrailer,
     image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/contracara.jpeg",
-  movie: "https://drive.google.com/file/d/1FsEqOKWlq4zMSeYOF-7tp_UB4jTKujqn/preview"
+    movie: "https://drive.google.com/file/d/1FsEqOKWlq4zMSeYOF-7tp_UB4jTKujqn/preview"
   },
   {
     id: "interestelar",
@@ -82,7 +81,7 @@ const MOVIES = [
     image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/venom-3.jpeg",
     movie: "https://drive.google.com/file/d/1-I98WaJ_C622i2YMeBFjcEn43808KgmR/preview"
   },
- {
+  {
     id: "clockstoppers",
     title: "Tiempo Congelado",
     year: 2024,
@@ -96,12 +95,12 @@ const MOVIES = [
     movie: "https://drive.google.com/file/d/1mi8Ltlqx01KVDLKIIQXL0l05A_i5endV/preview"
   },
   {
-    id: "Lightyear",
+    id: "lightyear",
     title: "Lightyear",
     year: 2022,
     duration: "1h 45min",
-    rating: "PG-13",
-    genres: ["Animación, Aventura"],
+    rating: "PG",
+    genres: ["Animación", "Aventura"],
     description:
       "Buzz y Alisha exploran el planeta T'Kani Prime y viven aventuras en el espacio-tiempo.",
     trailerUrl: sampleTrailer,
@@ -112,10 +111,11 @@ const MOVIES = [
     id: "mufasa",
     title: "Mufasa - El Rey León",
     year: 2024,
-    duration: "h min",
+    duration: "1h 55min",
     rating: "PG-13",
-    genres: ["Animación, Drama"],
-    description:"Una inundación separa al cachorro Mufasa de sus padres, pero el rey de los leones lo acoge como a uno de los suyos tras demostrar su valentía. Al crecer, una manada de leones desterrados y los celos de su hermana adoptiva lo pondrán en peligro.",
+    genres: ["Animación", "Drama"],
+    description:
+      "Una inundación separa al cachorro Mufasa de sus padres, pero el rey de los leones lo acoge como a uno de los suyos tras demostrar su valentía. Al crecer, una manada de leones desterrados y los celos de su hermana adoptiva lo pondrán en peligro.",
     trailerUrl: sampleTrailer,
     image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/mufasa.jpeg",
     movie: "https://drive.google.com/file/d/1kpAxZOwLmSTcZZnHZ_vDlfNHqv9ZtGgz/preview"
@@ -123,11 +123,12 @@ const MOVIES = [
   {
     id: "how-train-your-dragon-2",
     title: "Cómo Entrenar a tu Dragón 2",
-    year: 2014 ,
-    duration: "h min",
-    rating: "PG-13",
-    genres: ["Animación, Aventura"],
-    description:"Hipo y Chimuelo se enfrentan a cazadores de dragones para evitar la guerra.",
+    year: 2014,
+    duration: "1h 42min",
+    rating: "PG",
+    genres: ["Animación", "Aventura"],
+    description:
+      "Hipo y Chimuelo se enfrentan a cazadores de dragones para evitar la guerra.",
     trailerUrl: sampleTrailer,
     image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/dragon2.jpeg",
     movie: "https://drive.google.com/file/d/1HoxHuCgIgetLZk6nuFE6nN9a_1YK9Py_/preview"
@@ -135,47 +136,51 @@ const MOVIES = [
   {
     id: "how-train-your-dragon-3",
     title: "Cómo Entrenar a tu Dragón 3 - El Mundo Oculto",
-    year:2019,
-    duration: "h min",
-    rating: "PG-13",
-    genres: [""],
-    description:"",
+    year: 2019,
+    duration: "1h 44min",
+    rating: "PG",
+    genres: ["Animación", "Aventura"],
+    description:
+      "Hipo y Chimuelo descubren un mundo oculto mientras luchan por proteger a su gente y a los dragones.",
     trailerUrl: sampleTrailer,
     image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/dragon3.jpeg",
     movie: "https://drive.google.com/file/d/1x4CYvRvkriWKcL2aE0nqOJY1tPAq71I2/preview"
   },
   {
-    id: "Avatar2-elcaminodelagua",
-    title: "Avatar 2 - El Camino del agua",
+    id: "avatar2-elcaminodelagua",
+    title: "Avatar 2 - El Camino del Agua",
     year: 2022,
-    duration: "h min",
+    duration: "3h 12min",
     rating: "PG-13",
-    genres: [""],
-    description:"",
+    genres: ["Ciencia ficción", "Aventura"],
+    description:
+      "Jake Sully y Neytiri deben proteger a su familia de nuevas amenazas en Pandora mientras exploran las profundidades oceánicas del planeta.",
     trailerUrl: sampleTrailer,
     image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/avatar2.jpeg",
     movie: "https://drive.google.com/file/d/12RRSn0kLKUea3RbJlg32Z7zLZE7v__B5/preview"
   },
   {
-    id: "Flow",
+    id: "flow",
     title: "Flow",
     year: 2024,
-    duration: "h min",
-    rating: "PG-13",
-    genres: [""],
-    description:"",
+    duration: "1h 25min",
+    rating: "PG",
+    genres: ["Animación", "Drama"],
+    description:
+      "Un gato debe aprender a convivir con otros animales en un barco que flota sobre un mundo inundado.",
     trailerUrl: sampleTrailer,
     image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/flow.jpeg",
     movie: "https://drive.google.com/file/d/1VVd1JCyxkHXGpsYr-3-SaD68pijn1XFS/preview"
   },
   {
-    id: "Spiderman-into-the-spiderverse",
+    id: "spiderman-into-the-spiderverse",
     title: "Spiderman - Un Nuevo Universo",
     year: 2018,
-    duration: "h min",
-    rating: "PG-13",
-    genres: [""],
-    description:"",
+    duration: "1h 56min",
+    rating: "PG",
+    genres: ["Animación", "Aventura"],
+    description:
+      "Miles Morales se convierte en Spider-Man y conoce a otros héroes arácnidos de universos paralelos.",
     trailerUrl: sampleTrailer,
     image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/into-the-spiderverse.jpeg",
     movie: "https://drive.google.com/file/d/1Gp-v1xvRausPDh9c88yxOSFusXM9dkwE/preview"
@@ -184,62 +189,66 @@ const MOVIES = [
     id: "get-out",
     title: "Huye",
     year: 2017,
-    duration: "h min",
-    rating: "PG-13",
-    genres: [""],
-    description:"",
+    duration: "1h 44min",
+    rating: "R",
+    genres: ["Terror", "Suspenso"],
+    description:
+      "Chris visita a los padres de su novia, pero descubre un siniestro secreto detrás de su aparente amabilidad.",
     trailerUrl: sampleTrailer,
     image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/get-out.jpeg",
     movie: "https://drive.google.com/file/d/1en6HYU4w0GfvSf3PT8ZAqcxzbHvCcjHB/preview"
   },
   {
-    id: "Rango",
+    id: "rango",
     title: "Rango",
-    year: ,
-    duration: "h min",
-    rating: "PG-13",
-    genres: [""],
-    description:"",
+    year: 2011,
+    duration: "1h 47min",
+    rating: "PG",
+    genres: ["Animación", "Aventura", "Comedia"],
+    description:
+      "Un camaleón doméstico se convierte en el héroe de un pueblo del Viejo Oeste.",
     trailerUrl: sampleTrailer,
-    image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/.jpeg",
+    image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/rango.jpeg",
     movie: "preview"
   },
   {
-    id: "K-Pop-Hunters",
-    title: "LAs Guerreras K-Pop",
-    year: ,
-    duration: "h min",
+    id: "kpop-hunters",
+    title: "Las Guerreras K-Pop",
+    year: 2024,
+    duration: "1h 30min",
     rating: "PG-13",
-    genres: [""],
-    description:"",
+    genres: ["Acción", "Música"],
+    description: "Un grupo de chicas K-Pop debe enfrentarse a un complot internacional mientras están de gira.",
     trailerUrl: sampleTrailer,
-    image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/.jpeg",
+    image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/kpop-hunters.jpeg",
     movie: "preview"
   },
   {
-    id: "fast-and-furius5",
-    title: "Rápidos y Furiosos 5ntrol ",
-    year: ,
-    duration: "h min",
+    id: "fast-and-furious5",
+    title: "Rápidos y Furiosos 5",
+    year: 2011,
+    duration: "2h 10min",
     rating: "PG-13",
-    genres: [""],
-    description:"",
+    genres: ["Acción", "Crimen"],
+    description: "Dom y Brian planean un último gran golpe en Río de Janeiro mientras son perseguidos por un agente federal.",
     trailerUrl: sampleTrailer,
-    image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/.jpeg",
+    image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/fast5.jpeg",
     movie: "preview"
   },
   {
-    id: "miraculous-awakenig",
-    title: "Miraculous Awakening",
-    year: ,
-    duration: "h min",
-    rating: "PG-13",
-    genres: [""],
-    description:"",
+    id: "miraculous-awakening",
+    title: "Miraculous: Awakening",
+    year: 2023,
+    duration: "1h 45min",
+    rating: "PG",
+    genres: ["Animación", "Aventura", "Romance"],
+    description:
+      "Marinette y Adrien enfrentan nuevos desafíos como Ladybug y Cat Noir en su primera aventura cinematográfica.",
     trailerUrl: sampleTrailer,
-    image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/.jpeg",
+    image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/miraculous.jpeg",
     movie: "preview"
-  },
+  }
 ];
-// (Opcional) Exponerlo globalmente (ya lo hace const, pero por compatibilidad)
+
+// (Opcional) Exponerlo globalmente
 window.MOVIES = MOVIES;
