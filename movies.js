@@ -230,7 +230,7 @@ const MOVIES = [
     genres: ["Acción", "Crimen"],
     description: "Dom y Brian planean un último gran golpe en Río de Janeiro mientras son perseguidos por un agente federal.",
     trailerUrl: sampleTrailer,
-    image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/fast5.jpeg",
+    image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/fast-and-furius5.jpg",
     movie: "https://drive.google.com/file/d/1kkdCZcm_ynd7URwOML6jWAabSMSvArha/preview"
   },
   {
@@ -290,8 +290,32 @@ const MOVIES = [
     genres: ["Animación", "Aventura", "Romance"],
     description:"Marinette y Adrien enfrentan nuevos desafíos como Ladybug y Cat Noir en su primera aventura cinematográfica.",
     trailerUrl: sampleTrailer,
-    image: "images/fnaf.jpeg",
+    image: "images/fnaf.jpg",
     movie: "https://drive.google.com/file/d/1NTEnMppzmWsNF0ufujXQp_6tr9i09JPF/preview"
+  },
+  {
+    id: "logan-wolverine",
+    title: "Logan - Wolverine",
+    year: 2017,
+    duration: "1h 45min",
+    rating: "PG",
+    genres: ["Animación", "Aventura", "Romance"],
+    description:"Marinette y Adrien enfrentan nuevos desafíos como Ladybug y Cat Noir en su primera aventura cinematográfica.",
+    trailerUrl: sampleTrailer,
+    image: "images/logan-wolverine.jpg",
+    movie: "https://drive.google.com/file/d/11LZONN67ENZ7vo7wPpIPg2c6K4RzqLqW/preview"
+  },
+  {
+    id: "deadpool3",
+    title: "DeadPool 3",
+    year: 2024,
+    duration: "1h 45min",
+    rating: "PG",
+    genres: ["Animación", "Aventura", "Romance"],
+    description:"Marinette y Adrien enfrentan nuevos desafíos como Ladybug y Cat Noir en su primera aventura cinematográfica.",
+    trailerUrl: sampleTrailer,
+    image: "images/deadpool3.jpg",
+    movie: "https://drive.google.com/file/d/1w9pPohiLbkp3GTjTJNqPsh60khrX68Ab/preview"
   }
 ];
 
