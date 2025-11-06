@@ -26,3 +26,13 @@ body{margin:0;background:#041220;color:#fff}
 
 .comments h2{margin:10px 0 12px;font-size:20px}
 .comment small{opacity:0.6}
+/*color del boton*/
+.back-btn a {
+  color: #fff;
+  text-decoration: none; /* opcional: quita el subrayado */
+  font-weight: 500;      /* opcional: un poco más visible */
+}
+
+.back-btn a:hover {
+  text-decoration: underline; /* opcional: efecto al pasar el mouse */
+}
