@@ -193,7 +193,7 @@ const MOVIES = [
     description:
       "Chris visita a los padres de su novia, pero descubre un siniestro secreto detrás de su aparente amabilidad.",
     trailerUrl: sampleTrailer,
-    image: "hhttps://apeiros173.github.io/ShareFilms-Peliculas-Gratis/images/get-out.jpeg",
+    image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/images/get-out.jpeg",
     movie: "https://drive.google.com/file/d/1en6HYU4w0GfvSf3PT8ZAqcxzbHvCcjHB/preview"
   },
   {
@@ -207,7 +207,7 @@ const MOVIES = [
       "Un camaleón doméstico se convierte en el héroe de un pueblo del Viejo Oeste.",
     trailerUrl: sampleTrailer,
     image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/images/rango.jpeg",
-    movie: "preview"
+    movie: "https://drive.google.com/file/d/1SB357lg3QIGL5RvdfrJQ53_1jmnHNv7u/preview"
   },
   {
     id: "kpop-hunters",
@@ -218,8 +218,8 @@ const MOVIES = [
     genres: ["Acción", "Música"],
     description: "Un grupo de chicas K-Pop debe enfrentarse a un complot internacional mientras están de gira.",
     trailerUrl: sampleTrailer,
-    image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/images/kpop-hunters.jpeg",
-    movie: "preview"
+    image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/huntrix.jpeg",
+    movie: "https://drive.google.com/file/u/0/d/1yn5s7n8Cf3hnMtJdND3xG6gMq0DO3kfO/preview"
   },
   {
     id: "fast-and-furious5",
@@ -231,7 +231,7 @@ const MOVIES = [
     description: "Dom y Brian planean un último gran golpe en Río de Janeiro mientras son perseguidos por un agente federal.",
     trailerUrl: sampleTrailer,
     image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/fast5.jpeg",
-    movie: "preview"
+    movie: "https://drive.google.com/file/d/1kkdCZcm_ynd7URwOML6jWAabSMSvArha/preview"
   },
   {
     id: "miraculous-awakening",
@@ -243,7 +243,7 @@ const MOVIES = [
     description:
       "Marinette y Adrien enfrentan nuevos desafíos como Ladybug y Cat Noir en su primera aventura cinematográfica.",
     trailerUrl: sampleTrailer,
-    image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/miraculous.jpeg",
+    image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/miraculousawakening.jpeg",
     movie: "preview"
   }
 ];
