@@ -254,7 +254,7 @@ const MOVIES = [
     description:"Marinette y Adrien enfrentan nuevos desafíos como Ladybug y Cat Noir en su primera aventura cinematográfica.",
     trailerUrl: sampleTrailer,
     image: "images/miraculous-awakening.jpg",
-    movie: "preview"
+    movie: "https://drive.google.com/file/d/1gvC_tMJHRTwnlA9nz8jN6Et1KhxDv9_X/preview"
   },
   {
     id: "sonic-the-hedgehog",
