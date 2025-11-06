@@ -242,7 +242,7 @@ const MOVIES = [
     genres: ["Animación", "Aventura", "Romance"],
     description:"Marinette y Adrien enfrentan nuevos desafíos como Ladybug y Cat Noir en su primera aventura cinematográfica.",
     trailerUrl: sampleTrailer,
-    image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/images/miraculous-awakening.jpeg",
+    image: "images/miraculous-awakening.jpeg",
     movie: "preview"
   },
   {
@@ -290,7 +290,7 @@ const MOVIES = [
     genres: ["Animación", "Aventura", "Romance"],
     description:"Marinette y Adrien enfrentan nuevos desafíos como Ladybug y Cat Noir en su primera aventura cinematográfica.",
     trailerUrl: sampleTrailer,
-    image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/.jpeg",
+    image: "images/fnaf.jpeg",
     movie: "https://drive.google.com/file/d/1NTEnMppzmWsNF0ufujXQp_6tr9i09JPF/preview"
   }
 ];
