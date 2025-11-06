@@ -168,6 +168,17 @@ const MOVIES = [
     image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/dragon3.jpeg",
     movie: "https://drive.google.com/file/d/1x4CYvRvkriWKcL2aE0nqOJY1tPAq71I2/preview"
   },
+  { id: "avatar",
+    title: "Avatar",
+    year: 2022,
+    duration: "3h 12min",
+    rating: "PG-13",
+    genres: ["Ciencia ficción", "Aventura"],
+    description: "Jake Sully y Neytiri deben proteger a su familia de nuevas amenazas en Pandora mientras exploran las profundidades oceánicas del planeta.",
+    trailerUrl: sampleTrailer,
+    image: "image/avatar.jpg",
+    movie: "https://drive.google.com/file/d/16JSSJ3zfvpZGG7zNGXqZ2DicCFyqrfGU/preview"
+  },
   {
     id: "avatar2-elcaminodelagua",
     title: "Avatar 2 - El Camino del Agua",
