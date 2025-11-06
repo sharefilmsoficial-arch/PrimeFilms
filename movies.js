@@ -114,8 +114,7 @@ const MOVIES = [
     duration: "1h 55min",
     rating: "PG-13",
     genres: ["Animación", "Drama"],
-    description:
-      "Una inundación separa al cachorro Mufasa de sus padres, pero el rey de los leones lo acoge como a uno de los suyos tras demostrar su valentía. Al crecer, una manada de leones desterrados y los celos de su hermana adoptiva lo pondrán en peligro.",
+    description:"Una inundación separa al cachorro Mufasa de sus padres, pero el rey de los leones lo acoge como a uno de los suyos tras demostrar su valentía. Al crecer, una manada de leones desterrados y los celos de su hermana adoptiva lo pondrán en peligro.",
     trailerUrl: sampleTrailer,
     image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/mufasa.jpeg",
     movie: "https://drive.google.com/file/d/1kpAxZOwLmSTcZZnHZ_vDlfNHqv9ZtGgz/preview"
@@ -127,8 +126,7 @@ const MOVIES = [
     duration: "1h 42min",
     rating: "PG",
     genres: ["Animación", "Aventura"],
-    description:
-      "Hipo y Chimuelo se enfrentan a cazadores de dragones para evitar la guerra.",
+    description:"Hipo y Chimuelo se enfrentan a cazadores de dragones para evitar la guerra.",
     trailerUrl: sampleTrailer,
     image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/dragon2.jpeg",
     movie: "https://drive.google.com/file/d/1HoxHuCgIgetLZk6nuFE6nN9a_1YK9Py_/preview"
@@ -195,7 +193,7 @@ const MOVIES = [
     description:
       "Chris visita a los padres de su novia, pero descubre un siniestro secreto detrás de su aparente amabilidad.",
     trailerUrl: sampleTrailer,
-    image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/get-out.jpeg",
+    image: "hhttps://apeiros173.github.io/ShareFilms-Peliculas-Gratis/images/get-out.jpeg",
     movie: "https://drive.google.com/file/d/1en6HYU4w0GfvSf3PT8ZAqcxzbHvCcjHB/preview"
   },
   {
@@ -208,7 +206,7 @@ const MOVIES = [
     description:
       "Un camaleón doméstico se convierte en el héroe de un pueblo del Viejo Oeste.",
     trailerUrl: sampleTrailer,
-    image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/rango.jpeg",
+    image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/images/rango.jpeg",
     movie: "preview"
   },
   {
@@ -220,7 +218,7 @@ const MOVIES = [
     genres: ["Acción", "Música"],
     description: "Un grupo de chicas K-Pop debe enfrentarse a un complot internacional mientras están de gira.",
     trailerUrl: sampleTrailer,
-    image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/kpop-hunters.jpeg",
+    image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/images/kpop-hunters.jpeg",
     movie: "preview"
   },
   {
