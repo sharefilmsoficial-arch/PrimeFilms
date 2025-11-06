@@ -240,11 +240,58 @@ const MOVIES = [
     duration: "1h 45min",
     rating: "PG",
     genres: ["Animación", "Aventura", "Romance"],
-    description:
-      "Marinette y Adrien enfrentan nuevos desafíos como Ladybug y Cat Noir en su primera aventura cinematográfica.",
+    description:"Marinette y Adrien enfrentan nuevos desafíos como Ladybug y Cat Noir en su primera aventura cinematográfica.",
     trailerUrl: sampleTrailer,
-    image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/miraculousawakening.jpeg",
+    image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/images/miraculous-awakening.jpeg",
     movie: "preview"
+  },
+  {
+    id: "sonic-the-hedgehog",
+    title: "Sonic",
+    year: 2023,
+    duration: "1h 45min",
+    rating: "PG",
+    genres: ["Animación", "Aventura", "Romance"],
+    description:"Marinette y Adrien enfrentan nuevos desafíos como Ladybug y Cat Noir en su primera aventura cinematográfica.",
+    trailerUrl: sampleTrailer,
+    image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/images/sonic.jpeg",
+    movie: "https://drive.google.com/file/d/1aYLsDe1HnNSqVjS7v_tiT-ztdcG3z7eU/preview"
+  },
+  {
+    id: "sonic-the-hedgehog-2",
+    title: "Sonic 2",
+    year: 2023,
+    duration: "1h 45min",
+    rating: "PG",
+    genres: ["Animación", "Aventura", "Romance"],
+    description:"Marinette y Adrien enfrentan nuevos desafíos como Ladybug y Cat Noir en su primera aventura cinematográfica.",
+    trailerUrl: sampleTrailer,
+    image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/images/sonic2.jpeg",
+    movie: "https://drive.google.com/file/d/1F6fK3gCNh5afr7ARKLWIRgvZ6iyUWnko/preview"
+  },
+  {
+    id: "karate-kid-legends",
+    title: "Karate Kid Leyendas",
+    year: 2023,
+    duration: "1h 45min",
+    rating: "PG",
+    genres: ["Animación", "Aventura", "Romance"],
+    description:"Marinette y Adrien enfrentan nuevos desafíos como Ladybug y Cat Noir en su primera aventura cinematográfica.",
+    trailerUrl: sampleTrailer,
+    image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/karate-legends.jpeg",
+    movie: "https://drive.google.com/file/d/1A26SVMjdf0MWh_HmFkXG_qtOv_C4lYK2/preview"
+  },
+  {
+    id: "five-nights-at-freddys",
+    title: "Five Nights At Fredyy's",
+    year: 2023,
+    duration: "1h 45min",
+    rating: "PG",
+    genres: ["Animación", "Aventura", "Romance"],
+    description:"Marinette y Adrien enfrentan nuevos desafíos como Ladybug y Cat Noir en su primera aventura cinematográfica.",
+    trailerUrl: sampleTrailer,
+    image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/.jpeg",
+    movie: "https://drive.google.com/file/d/1NTEnMppzmWsNF0ufujXQp_6tr9i09JPF/preview"
   }
 ];
 
