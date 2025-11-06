@@ -4,6 +4,19 @@ const sampleTrailer = "https://www.w3schools.com/html/mov_bbb.mp4"; // Tráiler 
 
 const MOVIES = [
   {
+    id: "spiderman-into-the-spiderverse",
+    title: "Spiderman - Un Nuevo Universo",
+    year: 2018,
+    duration: "1h 56min",
+    rating: "PG",
+    genres: ["Animación", "Aventura"],
+    description:
+      "Miles Morales se convierte en Spider-Man y conoce a otros héroes arácnidos de universos paralelos.",
+    trailerUrl: sampleTrailer,
+    image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/into-the-spiderverse.jpeg",
+    movie: "https://drive.google.com/file/d/1Gp-v1xvRausPDh9c88yxOSFusXM9dkwE/preview"
+  },
+  {
     id: "across-the-spiderverse",
     title: "Spider-Man: A través del Spiderverso",
     year: 2023,
@@ -168,19 +181,6 @@ const MOVIES = [
     trailerUrl: sampleTrailer,
     image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/flow.jpeg",
     movie: "https://drive.google.com/file/d/1VVd1JCyxkHXGpsYr-3-SaD68pijn1XFS/preview"
-  },
-  {
-    id: "spiderman-into-the-spiderverse",
-    title: "Spiderman - Un Nuevo Universo",
-    year: 2018,
-    duration: "1h 56min",
-    rating: "PG",
-    genres: ["Animación", "Aventura"],
-    description:
-      "Miles Morales se convierte en Spider-Man y conoce a otros héroes arácnidos de universos paralelos.",
-    trailerUrl: sampleTrailer,
-    image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/into-the-spiderverse.jpeg",
-    movie: "https://drive.google.com/file/d/1Gp-v1xvRausPDh9c88yxOSFusXM9dkwE/preview"
   },
   {
     id: "get-out",
