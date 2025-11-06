@@ -241,7 +241,7 @@ const MOVIES = [
     genres: ["Animación", "Aventura", "Romance"],
     description:"Marinette y Adrien enfrentan nuevos desafíos como Ladybug y Cat Noir en su primera aventura cinematográfica.",
     trailerUrl: sampleTrailer,
-    image: "/images/miraculous-awakening.jpg",
+    image: "images/miraculous-awakening.jpg",
     movie: "preview"
   },
   {
