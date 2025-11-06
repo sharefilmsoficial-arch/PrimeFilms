@@ -75,8 +75,7 @@ const MOVIES = [
     duration: "2h 0min",
     rating: "PG-13",
     genres: ["Acción", "Ciencia ficción"],
-    description:
-      "Eddie Brock y Venom están al borde de su última batalla cuando nuevas amenazas surgen y la línea entre héroe y villano se desdibuja.",
+    description: "Eddie Brock y Venom están al borde de su última batalla cuando nuevas amenazas surgen y la línea entre héroe y villano se desdibuja.",
     trailerUrl: sampleTrailer,
     image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/venom-3.jpeg",
     movie: "https://drive.google.com/file/d/1-I98WaJ_C622i2YMeBFjcEn43808KgmR/preview"
@@ -230,7 +229,7 @@ const MOVIES = [
     genres: ["Acción", "Crimen"],
     description: "Dom y Brian planean un último gran golpe en Río de Janeiro mientras son perseguidos por un agente federal.",
     trailerUrl: sampleTrailer,
-    image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/fast-and-furius5.jpg",
+    image: "images/fast-and-furius5.jpg",
     movie: "https://drive.google.com/file/d/1kkdCZcm_ynd7URwOML6jWAabSMSvArha/preview"
   },
   {
@@ -242,7 +241,7 @@ const MOVIES = [
     genres: ["Animación", "Aventura", "Romance"],
     description:"Marinette y Adrien enfrentan nuevos desafíos como Ladybug y Cat Noir en su primera aventura cinematográfica.",
     trailerUrl: sampleTrailer,
-    image: "images/miraculous-awakening.jpeg",
+    image: "/images/miraculous-awakening.jpg",
     movie: "preview"
   },
   {
