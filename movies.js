@@ -367,7 +367,7 @@ const MOVIES = [
     genres: ["Comedia", "Acción"],
     description:"Wade Wilson (Deadpool) abandona su retiro para unirse a una versión alterna de Wolverine, con el objetivo de salvar el multiverso de una amenaza externa. La historia comienza cuando la Autoridad de Variación Temporal (TVA) interrumpe la vida de Wade, llevándolo a una misión para enfrentar una crisis que podría borrar su universo de la existencia.",
     trailerUrl: sampleTrailer,
-    image: "images/.jpg",
+    image: "images/tinkerbell.jpg",
     movie: "https://drive.google.com/file/d/15hdvpjmUCJ9kNnUfOn5JOuVqLpQiVkR4/preview"
   ,
   {
@@ -379,7 +379,7 @@ const MOVIES = [
     genres: ["Comedia", "Acción"],
     description:"Wade Wilson (Deadpool) abandona su retiro para unirse a una versión alterna de Wolverine, con el objetivo de salvar el multiverso de una amenaza externa. La historia comienza cuando la Autoridad de Variación Temporal (TVA) interrumpe la vida de Wade, llevándolo a una misión para enfrentar una crisis que podría borrar su universo de la existencia.",
     trailerUrl: sampleTrailer,
-    image: "images/.jpg",
+    image: "images/tinkerbell2.jpg",
     movie: "preview"
   },
   {
@@ -391,7 +391,7 @@ const MOVIES = [
     genres: ["Comedia", "Acción"],
     description:"Wade Wilson (Deadpool) abandona su retiro para unirse a una versión alterna de Wolverine, con el objetivo de salvar el multiverso de una amenaza externa. La historia comienza cuando la Autoridad de Variación Temporal (TVA) interrumpe la vida de Wade, llevándolo a una misión para enfrentar una crisis que podría borrar su universo de la existencia.",
     trailerUrl: sampleTrailer,
-    image: "images/.jpg",
+    image: "images/tinkerbell3.jpg",
     movie: "https://drive.google.com/file/d/1shBNCAb3QkavzXx7PKbe8HLahWQo7fCt/preview"
   },
   {
@@ -403,7 +403,7 @@ const MOVIES = [
     genres: ["Comedia", "Acción"],
     description:"Wade Wilson (Deadpool) abandona su retiro para unirse a una versión alterna de Wolverine, con el objetivo de salvar el multiverso de una amenaza externa. La historia comienza cuando la Autoridad de Variación Temporal (TVA) interrumpe la vida de Wade, llevándolo a una misión para enfrentar una crisis que podría borrar su universo de la existencia.",
     trailerUrl: sampleTrailer,
-    image: "images/.jpg",
+    image: "images/tinkerbell4.jpg",
     movie: "preview"
   },
   {
@@ -415,7 +415,7 @@ const MOVIES = [
     genres: ["Comedia", "Acción"],
     description:"Wade Wilson (Deadpool) abandona su retiro para unirse a una versión alterna de Wolverine, con el objetivo de salvar el multiverso de una amenaza externa. La historia comienza cuando la Autoridad de Variación Temporal (TVA) interrumpe la vida de Wade, llevándolo a una misión para enfrentar una crisis que podría borrar su universo de la existencia.",
     trailerUrl: sampleTrailer,
-    image: "images/.jpg",
+    image: "images/tinkerbell5.jpg",
     movie: "preview"
   },
   {
@@ -427,7 +427,7 @@ const MOVIES = [
     genres: ["Comedia", "Acción"],
     description:"Wade Wilson (Deadpool) abandona su retiro para unirse a una versión alterna de Wolverine, con el objetivo de salvar el multiverso de una amenaza externa. La historia comienza cuando la Autoridad de Variación Temporal (TVA) interrumpe la vida de Wade, llevándolo a una misión para enfrentar una crisis que podría borrar su universo de la existencia.",
     trailerUrl: sampleTrailer,
-    image: "images/.jpg",
+    image: "images/tinkerbell6.jpg",
     movie: "https://drive.google.com/file/d/1gj_AJBWsrdK17wGRb0TX9q2ntOmY8F2l/preview"
   }
 ];
