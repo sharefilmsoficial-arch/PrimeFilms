@@ -284,7 +284,7 @@ const MOVIES = [
   },
   {
     id: "miraculous-world4",
-    title: "Miraculous World Londres: Chronobug al filo del tiempo",
+    title: "Proximamente : Miraculous World Londres: Chronobug al filo del tiempo",
     year: 2024,
     duration: "52min",
     rating: "PG-",
@@ -296,7 +296,7 @@ const MOVIES = [
   },
   {
     id: "miraculous-world5",
-    title: "Miraculous World Tokio: Fuerza Estelar",
+    title: "Proximamente : Miraculous World Tokio: Fuerza Estelar",
     year: 2025,
     duration: "52min",
     rating: "PG-",
@@ -316,7 +316,7 @@ const MOVIES = [
     description:"Un guardián de joyas mágicas convierte a una chica peculiar y a un chico popular en superhéroes. No obstante, jamás podrán revelar su verdadera identidad, ni siquiera el uno al otro.",
     trailerUrl: sampleTrailer,
     image: "images/miraculous-awakening.jpg",
-    movie: "https://drive.google.com/file/d/1gvC_tMJHRTwnlA9nz8jN6Et1KhxDv9_X/preview"
+    movie: "aun no"
   },
   {
     id: "sonic-the-hedgehog",
@@ -424,7 +424,7 @@ const MOVIES = [
     description:"Una misteriosa fuerza atrae a Tink para cruzar la frontera hacia el desconocido mundo de los Bosques de Invierno, un lugar donde las hadas de Pixie Hollow tienen prohibido ir. Allí descubre un secreto que cambiará su vida para siempre: tiene una hermana llamada Periwinkle. Cuando Pixie Hollow se ve amenazado, el dúo debe trabajar unido para salvar ambos mundos.",
     trailerUrl: sampleTrailer,
     image: "images/tinkerbell4.jpg",
-    movie: "preview"
+    movie: "https://drive.google.com/file/d/1FbnSkyTL26eRGxc-PZGHgQLz7Kqpa0GB/preview"
   },
   {
     id: "tinkerbel5",
@@ -460,7 +460,7 @@ const MOVIES = [
     description:"Cuando Dory, la olvidadiza pez cirujano, recuerda que tiene una familia que podría estar buscándola, va en una aventura con Marlin y Nemo para encontrarla con ayuda de Hank, un pulpo gruñón, Bailey, una beluga convencida de que sus sonar biológico anda mal, y Destiny, una tiburón ballena miope.",
     trailerUrl: sampleTrailer,
     image: "images/finding-dory.jpg",
-    movie: "preview"
+    movie: "https://drive.google.com/file/d/1x5il-6bRAx6IGrwWnZlNrNwbc-GW16WK/preview"
   }
 ];
 
