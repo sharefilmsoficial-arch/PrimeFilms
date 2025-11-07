@@ -369,7 +369,7 @@ const MOVIES = [
     trailerUrl: sampleTrailer,
     image: "images/tinkerbell.jpg",
     movie: "https://drive.google.com/file/d/15hdvpjmUCJ9kNnUfOn5JOuVqLpQiVkR4/preview"
-  ,
+  },
   {
     id: "tinkerbel2",
     title: "TinkerBell 2: EL Tesoro Perdido",
