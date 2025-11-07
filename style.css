@@ -1,4 +1,3 @@
-
 *{box-sizing:border-box;font-family:Inter, Poppins, Arial, sans-serif}
 body{margin:0;background:#041220;color:#fff}
 .topbar{display:flex;align-items:center;gap:20px;padding:12px 24px;background:#071223;position:sticky;top:0;z-index:5}
