@@ -357,6 +357,78 @@ const MOVIES = [
     trailerUrl: sampleTrailer,
     image: "images/deadpool3.jpg",
     movie: "https://drive.google.com/file/d/1w9pPohiLbkp3GTjTJNqPsh60khrX68Ab/preview"
+  },
+  {
+    id: "tinkerbel",
+    title: "TinkerBell",
+    year: 2008,
+    duration: "h min",
+    rating: "PG-13",
+    genres: ["Comedia", "Acción"],
+    description:"Wade Wilson (Deadpool) abandona su retiro para unirse a una versión alterna de Wolverine, con el objetivo de salvar el multiverso de una amenaza externa. La historia comienza cuando la Autoridad de Variación Temporal (TVA) interrumpe la vida de Wade, llevándolo a una misión para enfrentar una crisis que podría borrar su universo de la existencia.",
+    trailerUrl: sampleTrailer,
+    image: "images/.jpg",
+    movie: "https://drive.google.com/file/d/15hdvpjmUCJ9kNnUfOn5JOuVqLpQiVkR4/preview"
+  ,
+  {
+    id: "tinkerbel2",
+    title: "TinkerBell 2: EL Tesoro Perdido",
+    year: 2009,
+    duration: "h min",
+    rating: "PG-13",
+    genres: ["Comedia", "Acción"],
+    description:"Wade Wilson (Deadpool) abandona su retiro para unirse a una versión alterna de Wolverine, con el objetivo de salvar el multiverso de una amenaza externa. La historia comienza cuando la Autoridad de Variación Temporal (TVA) interrumpe la vida de Wade, llevándolo a una misión para enfrentar una crisis que podría borrar su universo de la existencia.",
+    trailerUrl: sampleTrailer,
+    image: "images/.jpg",
+    movie: "preview"
+  },
+  {
+    id: "tinkerbel3",
+    title: "TinkerBell 3: Hadas al Rescate",
+    year: 2010,
+    duration: "h min",
+    rating: "PG-13",
+    genres: ["Comedia", "Acción"],
+    description:"Wade Wilson (Deadpool) abandona su retiro para unirse a una versión alterna de Wolverine, con el objetivo de salvar el multiverso de una amenaza externa. La historia comienza cuando la Autoridad de Variación Temporal (TVA) interrumpe la vida de Wade, llevándolo a una misión para enfrentar una crisis que podría borrar su universo de la existencia.",
+    trailerUrl: sampleTrailer,
+    image: "images/.jpg",
+    movie: "https://drive.google.com/file/d/1shBNCAb3QkavzXx7PKbe8HLahWQo7fCt/preview"
+  },
+  {
+    id: "tinkerbel4",
+    title: "TinkerBell 4: El Secreto de las Hadas",
+    year: 20,
+    duration: "h min",
+    rating: "PG-13",
+    genres: ["Comedia", "Acción"],
+    description:"Wade Wilson (Deadpool) abandona su retiro para unirse a una versión alterna de Wolverine, con el objetivo de salvar el multiverso de una amenaza externa. La historia comienza cuando la Autoridad de Variación Temporal (TVA) interrumpe la vida de Wade, llevándolo a una misión para enfrentar una crisis que podría borrar su universo de la existencia.",
+    trailerUrl: sampleTrailer,
+    image: "images/.jpg",
+    movie: "preview"
+  },
+  {
+    id: "tinkerbel5",
+    title: "TinkerBell 5: La Hada Pirata",
+    year: 20,
+    duration: "h min",
+    rating: "PG-13",
+    genres: ["Comedia", "Acción"],
+    description:"Wade Wilson (Deadpool) abandona su retiro para unirse a una versión alterna de Wolverine, con el objetivo de salvar el multiverso de una amenaza externa. La historia comienza cuando la Autoridad de Variación Temporal (TVA) interrumpe la vida de Wade, llevándolo a una misión para enfrentar una crisis que podría borrar su universo de la existencia.",
+    trailerUrl: sampleTrailer,
+    image: "images/.jpg",
+    movie: "preview"
+  },
+  {
+    id: "tinkerbel6",
+    title: "TinkerBell 6: La Leyenda de la Bestia de Nunca Jamás",
+    year: 2014,
+    duration: "h min",
+    rating: "PG-13",
+    genres: ["Comedia", "Acción"],
+    description:"Wade Wilson (Deadpool) abandona su retiro para unirse a una versión alterna de Wolverine, con el objetivo de salvar el multiverso de una amenaza externa. La historia comienza cuando la Autoridad de Variación Temporal (TVA) interrumpe la vida de Wade, llevándolo a una misión para enfrentar una crisis que podría borrar su universo de la existencia.",
+    trailerUrl: sampleTrailer,
+    image: "images/.jpg",
+    movie: "https://drive.google.com/file/d/1gj_AJBWsrdK17wGRb0TX9q2ntOmY8F2l/preview"
   }
 ];
 
