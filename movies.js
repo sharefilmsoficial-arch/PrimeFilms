@@ -10,8 +10,7 @@ const MOVIES = [
     duration: "1h 56min",
     rating: "PG",
     genres: ["Animación", "Aventura"],
-    description:
-      "Miles Morales se convierte en Spider-Man y conoce a otros héroes arácnidos de universos paralelos.",
+    description: "Miles Morales se convierte en Spider-Man y conoce a otros héroes arácnidos de universos paralelos.",
     trailerUrl: sampleTrailer,
     image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/into-the-spiderverse.jpeg",
     movie: "https://drive.google.com/file/d/1Gp-v1xvRausPDh9c88yxOSFusXM9dkwE/preview"
@@ -23,8 +22,7 @@ const MOVIES = [
     duration: "2h 20min 05s",
     rating: "PG",
     genres: ["Animación", "Acción", "Aventura", "Superhéroes"],
-    description:
-      "Luego de ser mordido por una araña radioactiva, Miles Morales desarrolla misteriosos poderes que lo transforman en el Hombre Araña. Ahora deberá usar sus nuevas habilidades ante el malvado Kingpin, un enorme demente que puede abrir portales hacia otros universos.",
+    description: "Luego de ser mordido por una araña radioactiva, Miles Morales desarrolla misteriosos poderes que lo transforman en el Hombre Araña. Ahora deberá usar sus nuevas habilidades ante el malvado Kingpin, un enorme demente que puede abrir portales hacia otros universos.",
     image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/images/across-the-spiderverse.jpeg",
     trailerUrl: "https://drive.google.com/file/d/1wM0twYUIFIJ3o8oX1nyjbsyfpDwkH-cS/preview",
     movie: "https://drive.google.com/file/d/11SMv4hmFUM71MWcPYm5qXf5j-tJgeAWp/preview"
@@ -36,8 +34,7 @@ const MOVIES = [
     duration: "2h 18min 57s",
     rating: "R",
     genres: ["Acción", "Thriller", "Crimen"],
-    description:
-      "Un agente del FBI se somete a una cirugía experimental para asumir la identidad del terrorista que mató a su hijo. Pero las cosas salen terriblemente mal.",
+    description:  "Un agente del FBI se somete a una cirugía experimental para asumir la identidad del terrorista que mató a su hijo. Pero las cosas salen terriblemente mal.",
     trailerUrl: sampleTrailer,
     image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/contracara.jpeg",
     movie: "https://drive.google.com/file/d/1FsEqOKWlq4zMSeYOF-7tp_UB4jTKujqn/preview"
@@ -49,8 +46,7 @@ const MOVIES = [
     duration: "2h 49min",
     rating: "PG-13",
     genres: ["Ciencia ficción", "Drama", "Aventura"],
-    description:
-      "Un grupo de astronautas viaja a través de un agujero de gusano en busca de un nuevo hogar para la humanidad mientras la Tierra agoniza.",
+    description:  "Un grupo de astronautas viaja a través de un agujero de gusano en busca de un nuevo hogar para la humanidad mientras la Tierra agoniza.",
     trailerUrl: sampleTrailer,
     image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/interestelar.jpeg",
     movie: "https://drive.google.com/file/d/1cVVPgzsRjlombZxDsP2YWa9F9cHs0xa7/preview"
@@ -165,13 +161,13 @@ const MOVIES = [
     image: "https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/dragon3.jpeg",
     movie: "https://drive.google.com/file/d/1x4CYvRvkriWKcL2aE0nqOJY1tPAq71I2/preview"
   },
-  { id: "avatar",
+  { id: "avatar-2009",
     title: "Avatar",
-    year: 2022,
-    duration: "3h 12min",
+    year: 2009,
+    duration: "2h 42min",
     rating: "PG-13",
     genres: ["Ciencia ficción", "Aventura"],
-    description: "Jake Sully y Neytiri deben proteger a su familia de nuevas amenazas en Pandora mientras exploran las profundidades oceánicas del planeta.",
+    description: "En un exuberante planeta llamado Pandora viven los Na'vi, seres que aparentan ser primitivos pero que en realidad son muy evolucionados. Debido a que el ambiente de Pandora es venenoso, los híbridos humanos/Na'vi, llamados Avatares, están relacionados con las mentes humanas, lo que les permite moverse libremente por Pandora. Jake Sully, un exinfante de marina paralítico se transforma a través de un Avatar, y se enamora de una mujer Na'vi..",
     trailerUrl: sampleTrailer,
     image: "images/avatar.jpg",
     movie: "https://drive.google.com/file/d/16JSSJ3zfvpZGG7zNGXqZ2DicCFyqrfGU/preview"
@@ -386,10 +382,10 @@ const MOVIES = [
     id: "tinkerbel",
     title: "TinkerBell",
     year: 2008,
-    duration: "h min",
+    duration: "1h 23min",
     rating: "PG-13",
     genres: ["Comedia", "Acción"],
-    description:"Wade Wilson (Deadpool) abandona su retiro para unirse a una versión alterna de Wolverine, con el objetivo de salvar el multiverso de una amenaza externa. La historia comienza cuando la Autoridad de Variación Temporal (TVA) interrumpe la vida de Wade, llevándolo a una misión para enfrentar una crisis que podría borrar su universo de la existencia.",
+    description:"Viaja al secreto mundo de Pixie Hollow y escucha cantar a Tinker Bell mientras se revela la historia de la famosa hada de Disney. ¿Te preguntaste cómo surge el brillo de la naturaleza? ¿Quién le da luz y color entre las estaciones? Tinker Bell y sus cuatro mejores amigas hadas convierten el invierno en primavera y aprenden la importancia de ser fiel a uno mismo.",
     trailerUrl: sampleTrailer,
     image: "images/tinkerbell.jpg",
     movie: "https://drive.google.com/file/d/15hdvpjmUCJ9kNnUfOn5JOuVqLpQiVkR4/preview"
@@ -398,10 +394,10 @@ const MOVIES = [
     id: "tinkerbel2",
     title: "TinkerBell 2: EL Tesoro Perdido",
     year: 2009,
-    duration: "h min",
+    duration: "1h 25min",
     rating: "PG-13",
     genres: ["Comedia", "Acción"],
-    description:"Wade Wilson (Deadpool) abandona su retiro para unirse a una versión alterna de Wolverine, con el objetivo de salvar el multiverso de una amenaza externa. La historia comienza cuando la Autoridad de Variación Temporal (TVA) interrumpe la vida de Wade, llevándolo a una misión para enfrentar una crisis que podría borrar su universo de la existencia.",
+    description:"Saldrá una luna cosecha azul, y las hadas utilizarán una piedra lunar para restaurar el Árbol del Polvillo de Hadas, la fuente de su magia. Pero cuando Tinker Bell pone en riesgo todo Pixie Hollow, deberá aventurarse por el mar en una búsqueda para arreglar las cosas. Con su amigo Terence y la luciérnaga encantadora y pícara Blaze, Tink se enfrentará a un nuevo mundo y descubrirá el mejor tesoro.",
     trailerUrl: sampleTrailer,
     image: "images/tinkerbell2.jpg",
     movie: "https://drive.google.com/file/d/1iL5GrlinMujHqedzyQU0ebS7gVaSCkPP/preview"
@@ -410,10 +406,10 @@ const MOVIES = [
     id: "tinkerbel3",
     title: "TinkerBell 3: Hadas al Rescate",
     year: 2010,
-    duration: "h min",
+    duration: "1h 16min",
     rating: "PG-13",
     genres: ["Comedia", "Acción"],
-    description:"Wade Wilson (Deadpool) abandona su retiro para unirse a una versión alterna de Wolverine, con el objetivo de salvar el multiverso de una amenaza externa. La historia comienza cuando la Autoridad de Variación Temporal (TVA) interrumpe la vida de Wade, llevándolo a una misión para enfrentar una crisis que podría borrar su universo de la existencia.",
+    description:"Antes de conocer a Wendy y los Niños Perdidos, Tinker Bell conoció a Lizzy, una niña que cree en las hadas. En la campiña se da un encuentro cuando Tink es descubierta por Lizzy. Sus mundos se unen y Tink desarrolla un lazo con la niña curiosa que necesita una amiga. Sus hadas compañeras lanzan un audaz rescate, y Tinker Bell pone en riesgo su seguridad y el futuro de las hadas.",
     trailerUrl: sampleTrailer,
     image: "images/tinkerbell3.jpg",
     movie: "https://drive.google.com/file/d/1shBNCAb3QkavzXx7PKbe8HLahWQo7fCt/preview"
@@ -422,10 +418,10 @@ const MOVIES = [
     id: "tinkerbel4",
     title: "TinkerBell 4: El Secreto de las Hadas",
     year: 2012,
-    duration: "h min",
+    duration: "1h 15min",
     rating: "PG-13",
     genres: ["Comedia", "Acción"],
-    description:"Wade Wilson (Deadpool) abandona su retiro para unirse a una versión alterna de Wolverine, con el objetivo de salvar el multiverso de una amenaza externa. La historia comienza cuando la Autoridad de Variación Temporal (TVA) interrumpe la vida de Wade, llevándolo a una misión para enfrentar una crisis que podría borrar su universo de la existencia.",
+    description:"Una misteriosa fuerza atrae a Tink para cruzar la frontera hacia el desconocido mundo de los Bosques de Invierno, un lugar donde las hadas de Pixie Hollow tienen prohibido ir. Allí descubre un secreto que cambiará su vida para siempre: tiene una hermana llamada Periwinkle. Cuando Pixie Hollow se ve amenazado, el dúo debe trabajar unido para salvar ambos mundos.",
     trailerUrl: sampleTrailer,
     image: "images/tinkerbell4.jpg",
     movie: "preview"
@@ -434,10 +430,10 @@ const MOVIES = [
     id: "tinkerbel5",
     title: "TinkerBell 5: La Hada Pirata",
     year: 2014,
-    duration: "h min",
+    duration: "1h 30min",
     rating: "PG-13",
     genres: ["Comedia", "Acción"],
-    description:"Wade Wilson (Deadpool) abandona su retiro para unirse a una versión alterna de Wolverine, con el objetivo de salvar el multiverso de una amenaza externa. La historia comienza cuando la Autoridad de Variación Temporal (TVA) interrumpe la vida de Wade, llevándolo a una misión para enfrentar una crisis que podría borrar su universo de la existencia.",
+    description:"Desde el mundo de Peter Pan, llega una aventura sobre Zarina, un hada inteligente y ambiciosa cautivada por el polvillo de hada azul y sus infinitas posibilidades. Cuando las ideas salvajes de Zarina la meten en problemas, huye de la tierra de las hadas y se une a los piratas intrigantes de Skull Rock. Tinker Bell y sus amigos deben encontrar a Zarina, y luchan contra la banda de piratas liderada por un grumete llamado James, quien pronto se hará conocido como el propio capitán Garfio.",
     trailerUrl: sampleTrailer,
     image: "images/tinkerbell5.jpg",
     movie: "https://drive.google.com/file/d/1TYB_T6hH39nAcvvpARykmTiNOdw2rKAQ/preview"
@@ -446,6 +442,18 @@ const MOVIES = [
     id: "tinkerbel6",
     title: "TinkerBell 6: La Leyenda de la Bestia de Nunca Jamás",
     year: 2014,
+    duration: "1h 16min",
+    rating: "PG-13",
+    genres: ["Comedia", "Acción"],
+    description:"El antiguo mito de una criatura legendaria, la Bestia de Nunca Jamás, provoca curiosidad en Tinker Bell y su amiga Fawn, un hada de los animales que romperá las reglas para ayudar a cualquier animal que lo necesite. Pero esta criatura no es bienvenida en la Tierra de las Hadas, y las hadas exploradoras pretenden capturarla. Fawn, que ve un corazón tierno bajo su hosco exterior, deberá convencer a sus amigas de rescatar a la Bestia de Nunca Jamás. Algunas secuencias o patrones de luces intermitentes pueden afectar a espectadores fotosensibles.",
+    trailerUrl: sampleTrailer,
+    image: "images/tinkerbell6.jpg",
+    movie: "https://drive.google.com/file/d/1gj_AJBWsrdK17wGRb0TX9q2ntOmY8F2l/preview"
+  },
+  {
+    id: "finding-dory-2016",
+    title: "Buscando a Dory",
+    year: 2016,
     duration: "h min",
     rating: "PG-13",
     genres: ["Comedia", "Acción"],
