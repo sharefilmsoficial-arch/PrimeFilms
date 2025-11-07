@@ -58,22 +58,21 @@ const toggleMute = qs('#toggleMute');
 if (movie.trailerUrl) {
   const container = document.getElementById("videoContainer");
 
- if (movie.trailerUrl.includes("drive.google.com")) {
-  const iframe = document.createElement("iframe");
-  iframe.src = movie.trailerUrl + "?autoplay=1&mute=1&loop=1&enablejsapi=1";
-  iframe.setAttribute("allow", "autoplay; encrypted-media; fullscreen");
-  iframe.frameBorder = "0";
-  iframe.allowFullscreen = true;
-  iframe.style.position = "absolute";
-  iframe.style.inset = "0";
-  iframe.style.width = "100%";
-  iframe.style.height = "100%";
-  iframe.style.objectFit = "cover";
-  container.innerHTML = "";
-  container.appendChild(iframe);
-  toggleMute.style.display = "none";
-}
- else {
+  if (movie.trailerUrl.includes("drive.google.com")) {
+    // 🎥 Si el tráiler es de Google Drive (usa iframe)
+    const iframe = document.createElement("iframe");
+    iframe.src = movie.trailerUrl;
+    iframe.allow = "autoplay";
+    iframe.frameBorder = "0";
+    iframe.allowFullscreen = true;
+    iframe.style.position = "absolute";
+    iframe.style.inset = "0";
+    iframe.style.width = "100%";
+    iframe.style.height = "100%";
+    iframe.style.objectFit = "cover";
+    container.innerHTML = ""; // limpiar el <video>
+    container.appendChild(iframe);
+  } else {
     // 🎬 Si es un archivo de video normal (.mp4, etc)
     bg.src = movie.trailerUrl;
     bg.loop = true;
