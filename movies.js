@@ -287,8 +287,32 @@ const MOVIES = [
     movie: "https://drive.google.com/file/d/1Eh6czDWVDupIAlkClf5Ec1OSZcBgbxj0/preview"
   },
   {
+    id: "miraculous-world4",
+    title: "Miraculous World Londres: Chronobug al filo del tiempo",
+    year: 2024,
+    duration: "52min",
+    rating: "PG-",
+    genres: ["Animación", "Aventura","Infantil","Acción","Fantasía"],
+    description:"Marinette, ahora Chronobug, se une a Bunnyx para enfrentarse a un oponente misterioso que viaja en el tiempo...¡y que conoce la identidad secreta de Ladybug!",
+    trailerUrl: sampleTrailer,
+    image: "images/miraculous-world4.jpg",
+    movie: "aun no"
+  },
+  {
+    id: "miraculous-world5",
+    title: "Miraculous World Tokio: Fuerza Estelar",
+    year: 2025,
+    duration: "52min",
+    rating: "PG-",
+    genres: ["Animación", "Aventura","Infantil","Acción","Fantasía"],
+    description:"Cuando Ladybug viaja a Tokio, conoce a Miki y Kazuno, viejos amigos de Kagami, miembros de la Stellar Force, un equipo japonés de superhéroes. Juntos, unen fuerzas para detener a un nuevo supervillano que busca sembrar el caos en la ciudad.",
+    trailerUrl: sampleTrailer,
+    image: "images/miraculous-world5.jpg",
+    movie: "aun no"
+  },
+  {
     id: "miraculous-awakening",
-    title: "Miraculous: Awakening",
+    title: "Próximamente",
     year: 2023,
     duration: "1h 39min",
     rating: "PG-",
@@ -380,7 +404,7 @@ const MOVIES = [
     description:"Wade Wilson (Deadpool) abandona su retiro para unirse a una versión alterna de Wolverine, con el objetivo de salvar el multiverso de una amenaza externa. La historia comienza cuando la Autoridad de Variación Temporal (TVA) interrumpe la vida de Wade, llevándolo a una misión para enfrentar una crisis que podría borrar su universo de la existencia.",
     trailerUrl: sampleTrailer,
     image: "images/tinkerbell2.jpg",
-    movie: "preview"
+    movie: "https://drive.google.com/file/d/1iL5GrlinMujHqedzyQU0ebS7gVaSCkPP/preview"
   },
   {
     id: "tinkerbel3",
@@ -397,7 +421,7 @@ const MOVIES = [
   {
     id: "tinkerbel4",
     title: "TinkerBell 4: El Secreto de las Hadas",
-    year: 20,
+    year: 2012,
     duration: "h min",
     rating: "PG-13",
     genres: ["Comedia", "Acción"],
@@ -409,14 +433,14 @@ const MOVIES = [
   {
     id: "tinkerbel5",
     title: "TinkerBell 5: La Hada Pirata",
-    year: 20,
+    year: 2014,
     duration: "h min",
     rating: "PG-13",
     genres: ["Comedia", "Acción"],
     description:"Wade Wilson (Deadpool) abandona su retiro para unirse a una versión alterna de Wolverine, con el objetivo de salvar el multiverso de una amenaza externa. La historia comienza cuando la Autoridad de Variación Temporal (TVA) interrumpe la vida de Wade, llevándolo a una misión para enfrentar una crisis que podría borrar su universo de la existencia.",
     trailerUrl: sampleTrailer,
     image: "images/tinkerbell5.jpg",
-    movie: "preview"
+    movie: "https://drive.google.com/file/d/1TYB_T6hH39nAcvvpARykmTiNOdw2rKAQ/preview"
   },
   {
     id: "tinkerbel6",
