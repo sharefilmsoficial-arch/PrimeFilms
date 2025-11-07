@@ -10,11 +10,11 @@
 <div id="app">
   <div class="back-btn"><a href="index.html">← Volver</a></div>
   <div class="movie-hero" id="hero">
-  <div id="videoContainer">
-    <video id="bgVideo" autoplay muted loop playsinline></video>
-  </div>
-  <div class="overlay"></div>
-  <div class="controls">
+    <div id="videoContainer">
+      <video id="bgVideo" autoplay muted loop playsinline></video>
+    </div>
+    <div class="overlay"></div>
+    <div class="controls">
       <h1 id="title"></h1>
       <p id="meta"></p>
       <div class="action-row">
@@ -54,41 +54,24 @@ qs('#meta').textContent = `${movie.year || ''} • ${movie.duration || ''} • $
 const hero = qs('#hero');
 const bg = qs('#bgVideo');
 const toggleMute = qs('#toggleMute');
-//trailer que funciona con drive//
-if (movie.trailerUrl) {
-  const container = document.getElementById("videoContainer");
 
-  if (movie.trailerUrl.includes("drive.google.com")) {
-    // 🎥 Si el tráiler es de Google Drive (usa iframe)
-    const iframe = document.createElement("iframe");
-    iframe.src = movie.trailerUrl;
-    iframe.allow = "autoplay";
-    iframe.frameBorder = "0";
-    iframe.allowFullscreen = true;
-    iframe.style.position = "absolute";
-    iframe.style.inset = "0";
-    iframe.style.width = "100%";
-    iframe.style.height = "100%";
-    iframe.style.objectFit = "cover";
-    container.innerHTML = ""; // limpiar el <video>
-    container.appendChild(iframe);
-  } else {
-    // 🎬 Si es un archivo de video normal (.mp4, etc)
-    bg.src = movie.trailerUrl;
-    bg.loop = true;
-    bg.muted = true;
-    bg.autoplay = true;
-    bg.playsInline = true;
-    bg.style.objectFit = "cover";
-    bg.style.width = "100%";
-    bg.style.height = "100%";
-    bg.load();
-    bg.play().catch(() => {});
-  }
+if (movie.trailerUrl) {
+  // 🎬 Si es un archivo de video normal (.mp4, .webm, etc.)
+  bg.src = movie.trailerUrl;
+  bg.loop = true;
+  bg.muted = true;
+  bg.autoplay = true;
+  bg.playsInline = true;
+  bg.style.objectFit = "cover";
+  bg.style.width = "100%";
+  bg.style.height = "100%";
+  bg.load();
+  bg.play().catch(() => {});
 } else {
   hero.classList.add('no-video');
 }
-// botón de mute/unmute
+
+// 🔇 Botón de mute/unmute
 toggleMute.addEventListener('click', () => {
   if (bg.muted) {
     bg.muted = false;
@@ -99,7 +82,7 @@ toggleMute.addEventListener('click', () => {
   }
 });
 
-/// Reproducir película
+// ▶ Reproducir película
 qs('#playMovie').addEventListener('click', ()=>{
   if(movie.movie && movie.movie.startsWith('http')){
     window.open(movie.movie, '_blank');
@@ -108,7 +91,7 @@ qs('#playMovie').addEventListener('click', ()=>{
   }
 });
 
-/// Likes y dislikes
+/// 👍👎 Likes y dislikes
 const likeBtn = qs('#likeBtn');
 const dislikeBtn = qs('#dislikeBtn');
 const likeCountEl = qs('#likeCount');
@@ -150,12 +133,8 @@ async function sendVote(vote){
     applyVoteVisual();
   }catch(e){ console.error(e); }
 }
-likeBtn.addEventListener('click', ()=>{
-  if(state.userVote===1) sendVote(0); else sendVote(1);
-});
-dislikeBtn.addEventListener('click', ()=>{
-  if(state.userVote===-1) sendVote(0); else sendVote(-1);
-});
+likeBtn.addEventListener('click', ()=>{ state.userVote===1 ? sendVote(0) : sendVote(1); });
+dislikeBtn.addEventListener('click', ()=>{ state.userVote===-1 ? sendVote(0) : sendVote(-1); });
 
 fetchVotes();
 </script>
@@ -173,13 +152,14 @@ fetchVotes();
     </div>
   </div>
 </section>
+
 <script>
 const commentsList = document.getElementById('commentsList');
 const commentName = document.getElementById('commentName');
 const commentText = document.getElementById('commentText');
 const submitComment = document.getElementById('submitComment');
 const clearComments = document.getElementById('clearComments');
-// prefills
+
 commentName.value = localStorage.getItem('sf_user_name') || '';
 
 async function loadComments(){
@@ -187,11 +167,17 @@ async function loadComments(){
     const res = await fetch(`api/get_comments.php?id=${movie.id}`);
     const data = await res.json();
     commentsList.innerHTML = '';
-    if(!data || data.length===0){ commentsList.innerHTML = '<p style="opacity:0.7">Sin comentarios. Sé el primero.</p>'; return; }
+    if(!data || data.length===0){
+      commentsList.innerHTML = '<p style="opacity:0.7">Sin comentarios. Sé el primero.</p>';
+      return;
+    }
     data.forEach(c=>{
       const el = document.createElement('div');
       el.className = 'comment';
-      el.style.padding='8px 12px'; el.style.borderRadius='8px'; el.style.marginBottom='8px'; el.style.background='rgba(255,255,255,0.02)';
+      el.style.padding='8px 12px';
+      el.style.borderRadius='8px';
+      el.style.marginBottom='8px';
+      el.style.background='rgba(255,255,255,0.02)';
       el.innerHTML = `<strong>${escapeHtml(c.name || 'Anónimo')}</strong> <span style="opacity:0.6;font-size:12px;margin-left:8px">${escapeHtml(c.created_at)}</span><div style="margin-top:6px">${escapeHtml(c.text)}</div>`;
       commentsList.appendChild(el);
     });
@@ -205,16 +191,25 @@ submitComment.addEventListener('click', async ()=>{
   if(!text){ alert('Escribe un comentario'); return; }
   localStorage.setItem('sf_user_name', name);
   try{
-    const res = await fetch('api/add_comment.php', {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({movie_id: movie.id, name, text})});
+    const res = await fetch('api/add_comment.php', {
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({movie_id: movie.id, name, text})
+    });
     const data = await res.json();
-    if(data.success){ commentText.value=''; loadComments(); } else { alert('No se pudo guardar el comentario'); }
+    if(data.success){ commentText.value=''; loadComments(); }
+    else { alert('No se pudo guardar el comentario'); }
   }catch(e){ console.error(e); alert('Error al enviar'); }
 });
 
 clearComments.addEventListener('click', async ()=>{
   if(!confirm('¿Eliminar todos los comentarios de esta película? (solo recomendado para pruebas)')) return;
   try{
-    const res = await fetch('api/clear_comments.php', {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({movie_id: movie.id})});
+    const res = await fetch('api/clear_comments.php', {
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({movie_id: movie.id})
+    });
     const data = await res.json();
     if(data.success) loadComments();
   }catch(e){ console.error(e); }
