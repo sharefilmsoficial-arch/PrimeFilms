@@ -260,7 +260,7 @@ const MOVIES = [
     description:"Con motivo de la semana de la amistad franco-estadounidense, Marinette y su clase viajan a Nueva York: la ciudad de los superhéroes. Es la oportunidad para que Marinette pase tiempo con sus amigos.",
     trailerUrl: sampleTrailer,
     image: "images/miraculous-world1.jpg",
-    movie: "https://drive.google.com/file/d/1ecnnRiojJW5TyOnhw2uVcHT7bBXPuTEQ/preview"
+    movie: "https://drive.google.com/file/d/1TPUdqv1A3hmkIJYOMVJ-iyVohR4PRWkH/preview"
   },
   {
     id: "miraculous-world2",
@@ -272,7 +272,19 @@ const MOVIES = [
     description:"Con motivo de la semana de la amistad franco-estadounidense, Marinette y su clase viajan a Nueva York: la ciudad de los superhéroes. Es la oportunidad para que Marinette pase tiempo con sus amigos.",
     trailerUrl: sampleTrailer,
     image: "images/miraculous-world2.jpg",
-    movie: "https://drive.google.com/file/d/1F6bDAra19utQdnTRw4E36Smr262Ehu-9/preview"
+    movie: "https://drive.google.com/file/d/1yA_UuoOznsItmT7W0CkAFq8KTgBAQGt5/preview"
+  },
+  {
+    id: "miraculous-world3",
+    title: "Miraculous World París: Las Aventuras de Shadowbug y Claw Noir",
+    year: 2023,
+    duration: "52min",
+    rating: "PG-",
+    genres: ["Animación", "Aventura","Infantil","Acción","Fantasía"],
+    description:"Con motivo de la semana de la amistad franco-estadounidense, Marinette y su clase viajan a Nueva York: la ciudad de los superhéroes. Es la oportunidad para que Marinette pase tiempo con sus amigos.",
+    trailerUrl: sampleTrailer,
+    image: "images/miraculous-world3.jpg",
+    movie: "https://drive.google.com/file/d/1Eh6czDWVDupIAlkClf5Ec1OSZcBgbxj0/preview"
   },
   {
     id: "miraculous-awakening",
