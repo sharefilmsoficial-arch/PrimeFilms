@@ -28,7 +28,7 @@ body{margin:0;background:#041220;color:#fff}
 .comment small{opacity:0.6}
 /*color del boton*/
 .back-btn a {
-  color: #fff;
+  color: #00C0FF;
   text-decoration: none; /* opcional: quita el subrayado */
   font-weight: 500;      /* opcional: un poco más visible */
 }
