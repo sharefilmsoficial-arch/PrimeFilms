@@ -47,45 +47,40 @@ if(!movie){
 
 qs('#title').textContent = movie.title;
 qs('#meta').textContent = `${movie.year || ''} • ${movie.duration || ''} • ${movie.rating || ''}`;
-//según funcionara el trailer//
+
+// 🎬 Reproducir tráiler como fondo con control de sonido
 const hero = qs('#hero');
 const bg = qs('#bgVideo');
+const toggleMute = qs('#toggleMute');
 
 if (movie.trailer) {
-  if (movie.trailer.includes("drive.google.com")) {
-    // Forzar autoplay del iframe de Google Drive
-    let autoplayURL = movie.trailer;
-    if (!autoplayURL.includes("autoplay=1")) {
-      autoplayURL += (autoplayURL.includes("?") ? "&" : "?") + "autoplay=1";
-    }
-
-    const iframe = document.createElement("iframe");
-    iframe.src = autoplayURL;
-    iframe.width = "100%";
-    iframe.height = "100%";
-    iframe.allow = "autoplay";
-    iframe.frameBorder = "0";
-    iframe.style.position = "absolute";
-    iframe.style.top = "0";
-    iframe.style.left = "0";
-    iframe.style.width = "100%";
-    iframe.style.height = "100%";
-    iframe.style.objectFit = "cover";
-    iframe.style.zIndex = "0";
-
-    bg.remove(); // quitar el <video>
-    hero.prepend(iframe);
-  } else {
-    // reproducir video normal
-    bg.src = movie.trailer;
-    bg.load();
-    bg.play().catch(()=>{});
-  }
+  // Si es video normal
+  bg.src = movie.trailer;
+  bg.loop = true;
+  bg.muted = true;
+  bg.autoplay = true;
+  bg.playsInline = true;
+  bg.style.objectFit = "cover";
+  bg.style.width = "100%";
+  bg.style.height = "100%";
+  bg.load();
+  bg.play().catch(() => {});
 } else {
   hero.classList.add('no-video');
 }
-///fin tráiler/
 
+// botón de mute/unmute
+toggleMute.addEventListener('click', () => {
+  if (bg.muted) {
+    bg.muted = false;
+    toggleMute.textContent = '🔊';
+  } else {
+    bg.muted = true;
+    toggleMute.textContent = '🔇';
+  }
+});
+
+/// Reproducir película
 qs('#playMovie').addEventListener('click', ()=>{
   if(movie.movie && movie.movie.startsWith('http')){
     window.open(movie.movie, '_blank');
@@ -94,11 +89,11 @@ qs('#playMovie').addEventListener('click', ()=>{
   }
 });
 
+/// Likes y dislikes
 const likeBtn = qs('#likeBtn');
 const dislikeBtn = qs('#dislikeBtn');
 const likeCountEl = qs('#likeCount');
 const dislikeCountEl = qs('#dislikeCount');
-const toggleMute = qs('#toggleMute');
 
 let state = { userVote: 0 }; // 1=like, -1=dislike, 0=none
 
@@ -122,7 +117,7 @@ function applyVoteVisual(){
   else if(state.userVote===-1){ dislikeBtn.classList.add('active'); likeBtn.classList.remove('active'); }
   else { likeBtn.classList.remove('active'); dislikeBtn.classList.remove('active'); }
 }
-async function sendVote(vote){ // vote: 1, -1, or 0 (remove)
+async function sendVote(vote){
   try{
     const res = await fetch('api/vote.php', {
       method:'POST',
@@ -141,10 +136,6 @@ likeBtn.addEventListener('click', ()=>{
 });
 dislikeBtn.addEventListener('click', ()=>{
   if(state.userVote===-1) sendVote(0); else sendVote(-1);
-});
-toggleMute.addEventListener('click', ()=>{
-  if(bg.muted){ bg.muted = false; toggleMute.textContent = '🔊'; }
-  else { bg.muted = true; toggleMute.textContent = '🔇'; }
 });
 
 fetchVotes();
@@ -210,7 +201,6 @@ clearComments.addEventListener('click', async ()=>{
   }catch(e){ console.error(e); }
 });
 
-// load initially
 loadComments();
 </script>
 
