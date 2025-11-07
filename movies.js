@@ -454,13 +454,13 @@ const MOVIES = [
     id: "finding-dory-2016",
     title: "Buscando a Dory",
     year: 2016,
-    duration: "h min",
+    duration: "1h 37min",
     rating: "PG-13",
-    genres: ["Comedia", "Acción"],
-    description:"Wade Wilson (Deadpool) abandona su retiro para unirse a una versión alterna de Wolverine, con el objetivo de salvar el multiverso de una amenaza externa. La historia comienza cuando la Autoridad de Variación Temporal (TVA) interrumpe la vida de Wade, llevándolo a una misión para enfrentar una crisis que podría borrar su universo de la existencia.",
+    genres: ["Acción", "Aventura","Comedia","Animación"],
+    description:"Cuando Dory, la olvidadiza pez cirujano, recuerda que tiene una familia que podría estar buscándola, va en una aventura con Marlin y Nemo para encontrarla con ayuda de Hank, un pulpo gruñón, Bailey, una beluga convencida de que sus sonar biológico anda mal, y Destiny, una tiburón ballena miope.",
     trailerUrl: sampleTrailer,
-    image: "images/tinkerbell6.jpg",
-    movie: "https://drive.google.com/file/d/1gj_AJBWsrdK17wGRb0TX9q2ntOmY8F2l/preview"
+    image: "images/finding-dory.jpg",
+    movie: "preview"
   }
 ];
 
