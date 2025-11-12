@@ -35,7 +35,7 @@ const MOVIES = [
     rating: "PG",
     genres: ["Animación", "Acción", "Aventura", "Superhéroes"],
     description: "Luego de ser mordido por una araña radioactiva, Miles Morales desarrolla misteriosos poderes que lo transforman en el Hombre Araña. Ahora deberá usar sus nuevas habilidades ante el malvado Kingpin, un enorme demente que puede abrir portales hacia otros universos.",
-    image: "images/beyond-the-spiderverse.jpeg",
+    image: "images/beyond-the-spiderverse.jpg",
     trailerUrl: "IJ3o8oX1nyjbsyfpDwkH-cS/preview",
     movie: "https://drive.google.com/file/d/11SMv4hmFUM71MWcPYm5qXf5j-tJgeAWp/preview"
   },
@@ -391,7 +391,7 @@ const MOVIES = [
     movie: "https://drive.google.com/file/d/1NTEnMppzmWsNF0ufujXQp_6tr9i09JPF/preview"
   },
   {
-    id: "five-nights-at-freddys",
+    id: "five-nights-at-freddys2",
     title: "Five Nights At Freddy's 2: Próximamente",
     year: 2023,
     duration: "1h 50min",
