@@ -284,7 +284,7 @@ const MOVIES = [
   },
   {
     id: "miraculous-world4",
-    title: "Proximamente : Miraculous World Londres: Chronobug al filo del tiempo",
+    title: "Miraculous World Londres: Chronobug al filo del tiempo",
     year: 2024,
     duration: "52min",
     rating: "PG-",
@@ -292,7 +292,7 @@ const MOVIES = [
     description:"Marinette, ahora Chronobug, se une a Bunnyx para enfrentarse a un oponente misterioso que viaja en el tiempo...¡y que conoce la identidad secreta de Ladybug!",
     trailerUrl: sampleTrailer,
     image: "images/miraculous-world4.jpg",
-    movie: "aun no"
+    movie: "https://drive.google.com/file/d/1lj_1bQM62XxUqEG9_taRrZcnaGg9cldN/preview"
   },
   {
     id: "miraculous-world5",
