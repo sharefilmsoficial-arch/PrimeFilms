@@ -28,6 +28,18 @@ const MOVIES = [
     movie: "https://drive.google.com/file/d/11SMv4hmFUM71MWcPYm5qXf5j-tJgeAWp/preview"
   },
   {
+    id: "beyond-into-the-spiderverse",
+    title: "Spider-Man 3 Proximamente: Beyond into the spiderverse",
+    year: 2023,
+    duration: "2h 20min 05s",
+    rating: "PG",
+    genres: ["Animación", "Acción", "Aventura", "Superhéroes"],
+    description: "Luego de ser mordido por una araña radioactiva, Miles Morales desarrolla misteriosos poderes que lo transforman en el Hombre Araña. Ahora deberá usar sus nuevas habilidades ante el malvado Kingpin, un enorme demente que puede abrir portales hacia otros universos.",
+    image: "images/beyond-the-spiderverse.jpeg",
+    trailerUrl: "IJ3o8oX1nyjbsyfpDwkH-cS/preview",
+    movie: "https://drive.google.com/file/d/11SMv4hmFUM71MWcPYm5qXf5j-tJgeAWp/preview"
+  },
+  {
     id: "face-off",
     title: "Contracara",
     year: 1997,
@@ -186,6 +198,18 @@ const MOVIES = [
     movie: "https://drive.google.com/file/d/12RRSn0kLKUea3RbJlg32Z7zLZE7v__B5/preview"
   },
   {
+    id: "avatar3-fireandash",
+    title: "Avatar 3 Próximamente (2026) - El Camino del Agua",
+    year: 2025,
+    duration: "3h 12min",
+    rating: "PG-13",
+    genres: ["Ciencia ficción", "Aventura"],
+    description:"Jake Sully y Neytiri deben proteger a su familia de nuevas amenazas en Pandora mientras exploran las profundidades oceánicas del planeta.",
+    trailerUrl: sampleTrailer,
+    image: "images/avatar3.jpeg",
+    movie: "https://drive.google.com/file/d/12RRSn0kLKUea3RbJlg32Z7zLZE7v__B5/preview"
+  },
+  {
     id: "flow",
     title: "Flow",
     year: 2024,
@@ -251,7 +275,7 @@ const MOVIES = [
     title: "Miraculous World Nueva York: Héroes Unidos",
     year: 2020,
     duration: "1h 03min",
-    rating: "PG-",
+    rating: "TV-G",
     genres: ["Animación", "Aventura","Infantil"],
     description:"Con motivo de la semana de la amistad franco-estadounidense, Marinette y su clase viajan a Nueva York: la ciudad de los superhéroes. Es la oportunidad para que Marinette pase tiempo con sus amigos.",
     trailerUrl: sampleTrailer,
@@ -263,7 +287,7 @@ const MOVIES = [
     title: "Miraculous World Shangai: La Leyenda de LadyDragon",
     year: 2020,
     duration: "52min",
-    rating: "PG-",
+    rating: "TV-G",
     genres: ["Animación", "Aventura","Infantil"],
     description:"Con motivo de la semana de la amistad franco-estadounidense, Marinette y su clase viajan a Nueva York: la ciudad de los superhéroes. Es la oportunidad para que Marinette pase tiempo con sus amigos.",
     trailerUrl: sampleTrailer,
@@ -275,7 +299,7 @@ const MOVIES = [
     title: "Miraculous World París: Las Aventuras de Shadowbug y Claw Noir",
     year: 2023,
     duration: "52min",
-    rating: "PG-",
+    rating: "PTV-G",
     genres: ["Animación", "Aventura","Infantil","Acción","Fantasía"],
     description:"Con motivo de la semana de la amistad franco-estadounidense, Marinette y su clase viajan a Nueva York: la ciudad de los superhéroes. Es la oportunidad para que Marinette pase tiempo con sus amigos.",
     trailerUrl: sampleTrailer,
@@ -287,7 +311,7 @@ const MOVIES = [
     title: "Miraculous World Londres: Chronobug al filo del tiempo",
     year: 2024,
     duration: "52min",
-    rating: "PG-",
+    rating: "TV-G",
     genres: ["Animación", "Aventura","Infantil","Acción","Fantasía"],
     description:"Marinette, ahora Chronobug, se une a Bunnyx para enfrentarse a un oponente misterioso que viaja en el tiempo...¡y que conoce la identidad secreta de Ladybug!",
     trailerUrl: sampleTrailer,
@@ -296,10 +320,10 @@ const MOVIES = [
   },
   {
     id: "miraculous-world5",
-    title: "Proximamente : Miraculous World Tokio: Fuerza Estelar",
+    title: "Proximamente (2026): Miraculous World Tokio: Fuerza Estelar",
     year: 2025,
     duration: "52min",
-    rating: "PG-",
+    rating: "TV-G",
     genres: ["Animación", "Aventura","Infantil","Acción","Fantasía"],
     description:"Cuando Ladybug viaja a Tokio, conoce a Miki y Kazuno, viejos amigos de Kagami, miembros de la Stellar Force, un equipo japonés de superhéroes. Juntos, unen fuerzas para detener a un nuevo supervillano que busca sembrar el caos en la ciudad.",
     trailerUrl: sampleTrailer,
@@ -343,6 +367,18 @@ const MOVIES = [
     movie: "https://drive.google.com/file/d/1F6fK3gCNh5afr7ARKLWIRgvZ6iyUWnko/preview"
   },
   {
+    id: "sonic-the-hedgehog-3",
+    title: "Sonic 3: Próximamente",
+    year: 2022,
+    duration: "2h 2min",
+    rating: "PG",
+    genres: ["Infantil","Acción"],
+    description:"Después de establecerse en Green Hills, Sonic quiere demostrar que tiene la madures de ser héroe. La prueba de fuego llega con el retorno del malvado Robotnik, y su nuevo compinche, Knuckles, en busca de una esmeralda que destruye civilizaciones. Sonic forma equipo con su propio compañero de fatigas, Tails, y juntos se lanzan a una aventura que les llevará por todo el mundo en busca de la preciada piedra para evitar que caiga en manos equivocadas.",
+    trailerUrl: sampleTrailer,
+    image: "images/sonic3.jpeg",
+    movie: "preview"
+  },
+  {
     id: "five-nights-at-freddys",
     title: "Five Nights At Freddy's",
     year: 2023,
@@ -352,6 +388,18 @@ const MOVIES = [
     description:"Mike Schmidt, un guardia de seguridad con problemas que empieza a trabajar en el turno de noche de la abandonada pizzería Freddy Fazbear's Pizza. A medida que pasa sus noches en el trabajo, descubre que las mascotas animatrónicas del lugar cobran vida de manera aterradora, lo que lleva a situaciones de suspense y terror. La trama explora el oscuro secreto de la pizzería, donde los animatrónicos están poseídos por las almas de niños secuestrados.",
     trailerUrl: sampleTrailer,
     image: "images/fnaf.jpg",
+    movie: "https://drive.google.com/file/d/1NTEnMppzmWsNF0ufujXQp_6tr9i09JPF/preview"
+  },
+  {
+    id: "five-nights-at-freddys",
+    title: "Five Nights At Freddy's 2: Próximamente",
+    year: 2023,
+    duration: "1h 50min",
+    rating: "PG-13",
+    genres: ["Terror","Misterio"],
+    description:"Mike Schmidt, un guardia de seguridad con problemas que empieza a trabajar en el turno de noche de la abandonada pizzería Freddy Fazbear's Pizza. A medida que pasa sus noches en el trabajo, descubre que las mascotas animatrónicas del lugar cobran vida de manera aterradora, lo que lleva a situaciones de suspense y terror. La trama explora el oscuro secreto de la pizzería, donde los animatrónicos están poseídos por las almas de niños secuestrados.",
+    trailerUrl: sampleTrailer,
+    image: "images/fnaf2.jpg",
     movie: "https://drive.google.com/file/d/1NTEnMppzmWsNF0ufujXQp_6tr9i09JPF/preview"
   },
   {
